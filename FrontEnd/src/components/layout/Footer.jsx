@@ -134,6 +134,12 @@ export default function Footer() {
         >
           Shubham Singh
         </a>
+        <h1 className="hover:text-white transition-colors font-medium">
+                  <a
+          href="mailto:shubham.singh7985@gmail.com"
+          className="hover:text-white transition-colors font-medium"
+        >shubham.singh7985@gmail.com</a>
+        </h1>
       </p>
     </div>
   </div>
