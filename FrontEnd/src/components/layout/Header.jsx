@@ -87,7 +87,7 @@ export default function Header() {
                 </button>
 
                 {/* Buttons as Links - use 'as' prop if Button supports it; otherwise wrap in Link */}
-                <Button
+                <Button onClick={()=>navigate("/contact")}
                   as={Link}
                   to="/contact"
                   variant="secondary"

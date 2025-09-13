@@ -27,7 +27,7 @@ export const portfolioProjects = [
     industry: 'E-commerce',
     service: 'Mobile Development',
     technologies: ['React Native', 'ARKit', 'Stripe', 'Firebase'],
-    image: 'https://images.pexels.com/photos/34577/pexels-photo-34577.jpeg',
+    image: 'https://cdn.shopify.com/s/files/1/0070/7032/articles/best-ecommerce-website-builders_5b380b23-0c70-4a43-95a9-971c6f3791bc.jpg?v=1754923375&originalWidth=1848&originalHeight=782&width=1800',
     results: [
       { metric: 'App Downloads', value: '100K+' },
       { metric: 'Conversion Rate', value: '+45%' },

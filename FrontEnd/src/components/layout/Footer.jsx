@@ -98,16 +98,16 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center">
                 <PhoneIcon className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-400">+1 (555) 123-4567</span>
+                <span className="text-gray-400">+(91) 6354 729 042</span>
               </div>
               <div className="flex items-center">
                 <EnvelopeIcon className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-400">hello@novaworks.studio</span>
+                <span className="text-gray-400">sahilp6354@gmail.com</span>
               </div>
-              <div className="flex items-start">
+              {/* <div className="flex items-start">
                 <MapPinIcon className="h-5 w-5 text-gray-400 mr-2 mt-0.5" />
                 <span className="text-gray-400">123 Innovation Ave<br />San Francisco, CA 94105</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -117,14 +117,17 @@ export default function Footer() {
     <div className="flex items-center space-x-4">
       <Link
         to="/"
-        className="text-xl font-bold bg-gradient-to-r from-indigo-400 to-teal-400 bg-clip-text text-transparent"
+        className="flex items-center gap-2 text-2xl font-bold bg-gradient-to-r from-indigo-400 to-teal-400 bg-clip-text text-transparent"
       >
-        NovaWorks Studio
+        
+          <img className='w-9 rounded-full' src='/assets/RUVANTA.jpg' />
+          <p>Ruvanta Services</p>
+        
       </Link>
     </div>
     <div className="mt-4 md:mt-0 text-center md:text-right">
       <p className="text-gray-400 text-sm">
-        © 2025 NovaWorks Studio. All rights reserved.
+        © 2025 Ruvanta Services. All rights reserved.
       </p>
       <p className="text-gray-500 text-xs mt-1">
         Website developed by{" "}

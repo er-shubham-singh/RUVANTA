@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRightIcon, CheckIcon } from '@heroicons/react/24/outline';
 import Button from '../components/ui/Button';
@@ -25,6 +25,10 @@ const features = [
 ];
 
 export default function Home() {
+  let navigate = useNavigate()
+   function handleNavigate (){
+      navigate("/services")
+  }
   const featuredProjects = portfolioProjects.filter(project => project.featured).slice(0, 3);
 
   return (
@@ -49,11 +53,11 @@ export default function Home() {
                 We craft exceptional web applications, mobile experiences, and digital solutions that drive growth and delight users.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Button size="lg" as={Link} to="/contact">
+                <Button onClick={()=>navigate("/contact")} size="lg" as={Link} to="/contact">
                   Get a Quote
                   <ArrowRightIcon className="ml-2 h-5 w-5" />
                 </Button>
-                <Button variant="secondary" size="lg" as={Link} to="/services">
+                <Button onClick={handleNavigate} variant="secondary" size="lg" as={Link} to="/services">
                   See Services
                 </Button>
               </div>
