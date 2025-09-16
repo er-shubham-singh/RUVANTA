@@ -79,21 +79,7 @@ export default function Home() {
               </div>
             </motion.div>
             
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
-            >
-              <div className="aspect-video bg-gradient-to-br from-indigo-600 to-teal-600 rounded-2xl shadow-2xl overflow-hidden">
-                <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-                  <div className="text-center text-white">
-                    <div className="text-2xl font-bold mb-2">Your Project Visualization</div>
-                    <div className="text-sm opacity-80">Custom design preview</div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
+
           </div>
         </div>
       </section>

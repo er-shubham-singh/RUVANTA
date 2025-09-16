@@ -250,5 +250,48 @@ export const services = [
       'Security compliance',
       'Cost optimization'
     ]
+  },
+  // 🚀 New Agentic AI Service
+  {
+    id: 'agentic-ai',
+    slug: 'agentic-ai',
+    title: 'Agentic AI Development',
+    shortDescription: 'Build autonomous AI agents to automate workflows, decision-making, and customer interactions.',
+    icon: '🤖',
+    timeline: '6-20 weeks',
+    deliverables: ['Custom AI agents', 'Integration with APIs/Databases', 'Workflow automation', 'Documentation'],
+    technologies: ['LangChain', 'OpenAI API', 'Pinecone', 'FastAPI', 'Vector Databases'],
+    priceRange: '$15,000 - $75,000',
+    process: [
+      {
+        step: 'Discovery',
+        description: 'Identify high-impact workflows and decision-making processes for automation'
+      },
+      {
+        step: 'Design',
+        description: 'Architect multi-agent systems with clear roles and integrations'
+      },
+      {
+        step: 'Build',
+        description: 'Develop AI agents with reasoning, memory, and real-time interaction'
+      },
+      {
+        step: 'Launch',
+        description: 'Deploy agents into production and integrate with business tools'
+      },
+      {
+        step: 'Support',
+        description: 'Continuous monitoring, fine-tuning, and scaling of AI agents'
+      }
+    ],
+    problemStatement: 'Enterprises face inefficiencies due to repetitive manual tasks and slow decision-making. Traditional automation lacks adaptability.',
+    features: [
+      'Autonomous AI agents',
+      'Real-time decision-making',
+      'Multi-agent collaboration',
+      'Knowledge base integration',
+      'Natural language interfaces',
+      'Continuous learning and improvement'
+    ]
   }
 ];

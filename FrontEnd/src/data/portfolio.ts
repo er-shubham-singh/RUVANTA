@@ -118,8 +118,30 @@ export const portfolioProjects = [
     solution: 'Delivered comprehensive e-learning solution with video and assessment features',
     outcome: '60% increase in student engagement with 99.9% uptime',
     featured: true
+  },
+  // 🚀 New Agentic AI Project
+  {
+    id: 'agentic-ai-workflow',
+    slug: 'agentic-ai-workflow',
+    title: 'Agentic AI Workflow Automation',
+    description: 'Autonomous AI agents for enterprise workflow automation and decision-making',
+    industry: 'Agentic AI',
+    service: 'AI Development',
+    technologies: ['LangChain', 'OpenAI API', 'Pinecone', 'FastAPI'],
+    image: 'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg',
+    results: [
+      { metric: 'Process Automation', value: '70% tasks automated' },
+      { metric: 'Operational Cost', value: '-45%' },
+      { metric: 'Decision Accuracy', value: '+55%' }
+    ],
+    challenge: 'Enterprise struggled with manual workflows and slow decision-making processes',
+    approach: 'Implemented multi-agent AI system for task automation and intelligent decision-making',
+    solution: 'Built scalable agentic AI platform integrating APIs, databases, and enterprise tools',
+    outcome: '70% task automation achieved, reducing costs by 45% while improving accuracy',
+    featured: true
   }
 ];
 
-export const industries = ['All', 'FinTech', 'E-commerce', 'Healthcare', 'SaaS', 'Food & Beverage', 'Education'];
-export const serviceTypes = ['All', 'Web Development', 'Mobile Development', 'UI/UX Design'];
+export const industries = ['All', 'FinTech', 'E-commerce', 'Healthcare', 'SaaS', 'Food & Beverage', 'Education', 'Agentic AI'];
+
+export const serviceTypes = ['All', 'Web Development', 'Mobile Development', 'UI/UX Design', 'AI Development'];

@@ -17,7 +17,7 @@ export default function About() {
             transition={{ duration: 0.8 }}
           >
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              We're NovaWorks Studio
+              We're Ruvanta Technology
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
               A team of passionate creators, engineers, and strategists dedicated to building exceptional digital experiences that drive real business results.
@@ -39,7 +39,7 @@ export default function About() {
             </h2>
             <div className="prose prose-lg dark:prose-invert mx-auto">
               <p>
-                Founded in 2018 by a team of former Google and Apple engineers, NovaWorks Studio was born from a simple belief: technology should make life better, not more complicated.
+                Founded in 2018 by a team of former Google and Apple engineers, Ruvanta Technology was born from a simple belief: technology should make life better, not more complicated.
               </p>
               <p>
                 We started as a small team of three in a San Francisco coffee shop, frustrated by the gap between what technology promised and what it actually delivered. Too many digital products were built without considering the real people who would use them.

@@ -3,7 +3,11 @@ import { Helmet } from 'react-helmet-async';
 import Header from './Header';
 import Footer from './Footer';
 
-export default function Layout({ children, title = 'NovaWorks Studio - Professional Digital Agency', description = '' }) {
+export default function Layout({
+  children,
+  title = 'Ruvanta - Professional Services',
+  description = ''
+}) {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
       <Helmet>
@@ -16,8 +20,9 @@ export default function Layout({ children, title = 'NovaWorks Studio - Professio
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "NovaWorks Studio",
-            "url": "https://novaworks.studio",
+            "name": "Ruvanta Technology",
+            // replace with your real production URL
+            "url": "https://ruvanta.example",
             "description": description,
             "address": {
               "@type": "PostalAddress",

@@ -10,7 +10,7 @@ const faqData = [
     category: 'General',
     questions: [
       {
-        question: 'What services does NovaWorks Studio offer?',
+        question: 'What services does Ruvanta Technology offer?',
         answer:
           'We offer comprehensive digital solutions including web development, mobile app development, UI/UX design, e-commerce solutions, API integrations, cloud & DevOps services, and ongoing maintenance & support.'
       },
@@ -20,7 +20,7 @@ const faqData = [
           'Yes! We work with everyone from startups to Fortune 500 companies. Our flexible approach and multiple service tiers allow us to provide value to businesses at any stage of growth.'
       },
       {
-        question: 'Where is NovaWorks Studio located?',
+        question: 'Where is Ruvanta Technology located?',
         answer:
           "We're a remote-first company with team members distributed globally. Our headquarters are in San Francisco, CA, but we serve clients worldwide and collaborate seamlessly across time zones."
       },
@@ -261,7 +261,7 @@ export default function FAQ() {
               transition={{ duration: 0.5 }}
             >
               <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-              <p className="text-indigo-100">hello@novaworks.studio</p>
+              <p className="text-indigo-100">hello@ruvantatechnology.studio</p>
               <p className="text-sm text-indigo-200">Response within 24 hours</p>
             </motion.div>
 
