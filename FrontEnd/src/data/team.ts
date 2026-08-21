@@ -49,6 +49,16 @@ export const teamMembers: TeamMember[] = [
     image: '/assets/team/shubham.png',
     linkedin: 'https://www.linkedin.com/in/shubham-singh-060898265',
     instagram: 'https://instagram.com'
+  },
+  {
+    id: 'sahil-prasad',
+    name: 'Sahil Prasad',
+    degree: 'B.Tech Computer Science',
+    role: 'Agentic AI & ML Engineer',
+    bio: 'Experienced AI/ML Engineer focused on developing production-ready computer vision systems, LLM-powered chatbots, RAG applications, Streamlit dashboard applications, and scalable agentic AI solutions using Python, PyTorch, OpenCV, FastAPI, Streamlit, Docker, and AWS.',
+    image: '/assets/team/sahil.png',
+    linkedin: 'https://www.linkedin.com/in/sahil-sailesh-prasad',
+    instagram: 'https://instagram.com'
   }
 ];
 

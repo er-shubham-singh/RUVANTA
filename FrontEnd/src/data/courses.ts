@@ -114,5 +114,30 @@ export const courses: Course[] = [
       { week: 'Week 4', topic: 'E-Commerce with WooCommerce', details: 'Adding physical/digital products, tax, coupon setups, and payment gateway integration (Razorpay/Stripe).' },
       { week: 'Weeks 5-6', topic: 'SEO, Security, Speed & Freelance Setup', details: 'Yoast/RankMath SEO, cache plugins, malware prevention, site migrations, and client management advice.' }
     ]
+  },
+  {
+    id: 'ai-ml-agentic-developer',
+    slug: 'ai-ml-agentic-developer-course',
+    title: 'AI/ML & Agentic AI Developer',
+    shortDescription: 'Master machine learning models, computer vision systems, LLM chatbots, RAG, and Streamlit dashboard apps.',
+    description: 'Become a job-ready artificial intelligence developer. This program covers Python, machine learning fundamentals, computer vision with OpenCV, large language models (LLMs), RAG systems, agentic AI frameworks, and Streamlit prototyping.',
+    duration: '14 Weeks',
+    price: '₹12,999',
+    originalPrice: '₹29,999',
+    discount: '56% OFF',
+    icon: '🤖',
+    technologies: ['Python', 'PyTorch', 'OpenCV', 'FastAPI', 'LLMs & RAG', 'Streamlit', 'Vector Databases', 'LangChain/LlamaIndex', 'Docker', 'AWS'],
+    features: [
+      'Build production-ready computer vision & LLM projects',
+      'Design interactive Streamlit dashboard applications',
+      'Implement agentic AI chatbots & RAG systems',
+      'Mentorship by senior AI/ML Engineer Sahil Prasad'
+    ],
+    syllabus: [
+      { week: 'Weeks 1-3', topic: 'Python, Numpy, Pandas & Computer Vision', details: 'Master python coding, data analysis, image processing, object detection, and drawing overlays with OpenCV.' },
+      { week: 'Weeks 4-6', topic: 'Machine Learning & Deep Learning Basics', details: 'Train classification, regression, and clustering models using PyTorch and Scikit-Learn frameworks.' },
+      { week: 'Weeks 7-10', topic: 'LLMs, RAG Pipelines & Vector DBs', details: 'Connecting models via LangChain, utilizing Pinecone/ChromaDB for semantic search, and prompt engineering.' },
+      { week: 'Weeks 11-14', topic: 'Streamlit dashboards, FastAPI & Cloud Deployments', details: 'Building interactive streamlit apps, exposing REST API endpoints via FastAPI, containerizing with Docker, and deploying to AWS.' }
+    ]
   }
 ];

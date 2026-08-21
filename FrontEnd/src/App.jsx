@@ -1,6 +1,6 @@
 // src/App.jsx
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './Redux/store'; // <-- ensure this path is correct
 
@@ -23,6 +23,17 @@ import Layout from './components/layout/Layout';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 
+// Helper component to auto-scroll page to top on route change
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <Provider store={store}>
@@ -31,6 +42,7 @@ function App() {
         <ToastContainer position="top-right" autoClose={4000} />
 
         <Router>
+          <ScrollToTop />
           <Layout>
             <Routes>
               <Route path="/" element={<Home />} />

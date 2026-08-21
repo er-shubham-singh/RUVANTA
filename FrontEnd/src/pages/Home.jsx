@@ -107,6 +107,17 @@ const courseCapsules = {
         🛒
       </div>
     </div>
+  ),
+  'ai-ml-agentic-developer': (
+    <div className="flex items-center gap-3 bg-white dark:bg-gray-800 rounded-full px-5 py-3 shadow-md border border-gray-100 dark:border-gray-700">
+      <div className="w-10 h-10 rounded-full bg-indigo-50 dark:bg-indigo-950/30 flex items-center justify-center text-xl font-bold border border-indigo-100 dark:border-indigo-900/50">
+        🤖
+      </div>
+      <span className="text-gray-400 font-bold text-xs">→</span>
+      <div className="w-10 h-10 rounded-full bg-pink-50 dark:bg-pink-950/30 flex items-center justify-center text-[10px] font-extrabold text-pink-600 dark:text-pink-400 border border-pink-100 dark:border-pink-900/50">
+        WEB
+      </div>
+    </div>
   )
 };
 
