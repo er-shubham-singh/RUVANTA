@@ -118,5 +118,55 @@ export const services: Service[] = [
       'Pixel integration and event tracking setup',
       'Cost-per-lead optimization'
     ]
+  },
+  {
+    id: 'ai-ml-integration',
+    slug: 'ai-ml-integration',
+    title: 'AI & Machine Learning Integration',
+    shortDescription: 'Build intelligent computer vision systems, LLM-powered custom chatbots, RAG pipelines, and Streamlit dashboards.',
+    icon: '🤖',
+    timeline: '3-6 weeks',
+    deliverables: ['Custom LLM/RAG Chatbot', 'Computer Vision / OpenCV models', 'Streamlit Interactive Dashboard', 'REST APIs via FastAPI', 'Docker Containers & AWS Deployment'],
+    technologies: ['Python', 'PyTorch', 'OpenCV', 'FastAPI', 'Streamlit', 'LangChain', 'Docker', 'AWS'],
+    priceRange: 'Starting from ₹24,999',
+    process: [
+      { step: 'Requirement & Architecture Design', description: 'Defining target AI objectives, planning pipeline schemas, database indexing, and Streamlit layouts.' },
+      { step: 'Model Prep & Vector Integration', description: 'Fine-tuning LLM integration, training custom computer vision models, and building RAG pipelines.' },
+      { step: 'Prototyping & Streamlit Dashboards', description: 'Developing interactive Streamlit dashboard web apps and fast backend FastAPI endpoints.' },
+      { step: 'Deployment & Scaling', description: 'Containerizing services using Docker and deploying live backend instances to AWS secure servers.' }
+    ],
+    problemStatement: 'Off-the-shelf software tools do not adapt to custom data. Businesses need custom AI integrations, secure databases, and fast dashboards to save hours of manual analysis.',
+    features: [
+      'Custom RAG search over corporate PDFs/documents',
+      'Production-ready OpenCV real-time object tracking or analysis',
+      'User-friendly Streamlit web apps for visual data inspection',
+      'Highly secure, fast API routes designed with Python FastAPI',
+      'Cloud deployment on AWS with Docker scaling support'
+    ]
+  },
+  {
+    id: 'ai-chatbot-build',
+    slug: 'ai-chatbot-build',
+    title: 'AI Chatbot Build',
+    shortDescription: 'Custom LLM-powered chatbots, intelligent conversational agents, and automated customer support bots integrated with your business data.',
+    icon: '💬',
+    timeline: '2-4 weeks',
+    deliverables: ['Custom Chatbot UI Widget', 'LangChain / LlamaIndex integration', 'Vector database integration', 'Embeddable chat widget script', 'Admin Analytics Dashboard'],
+    technologies: ['Python', 'LangChain / LlamaIndex', 'OpenAI API / Claude', 'FastAPI', 'Vector Databases', 'React', 'Streamlit', 'Docker'],
+    priceRange: 'Starting from ₹14,999',
+    process: [
+      { step: 'Persona & Data Scope Definition', description: 'Designing target chatbot tone, behavior rules, prompt templates, and gathering corporate training documents.' },
+      { step: 'Knowledge Indexing & RAG Pipeline', description: 'Parsing documents and loading them into vector databases (Chroma/Pinecone) for semantic context-aware search.' },
+      { step: 'Widget UI & API Integrations', description: 'Building conversational web widgets, connecting APIs, and embedding them onto client sites.' },
+      { step: 'Tuning, Testing & Launch', description: 'Refining prompt guidelines, optimizing conversation latency, and completing production server deployments.' }
+    ],
+    problemStatement: 'Manual customer support operations are slow and expensive, leading to lost sales opportunities. Businesses need context-aware AI chatbots that run 24/7.',
+    features: [
+      'Custom knowledge-base search (PDFs, docs, sites)',
+      'Human-like responsive tone and brand alignment',
+      'Seamless multi-platform embedding scripts',
+      'Fast API configurations with latency metrics',
+      'Support fallback routing triggers for humans'
+    ]
   }
 ];
