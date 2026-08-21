@@ -95,16 +95,6 @@ export default function About() {
                   <p className="text-gray-600 dark:text-gray-300 text-sm mb-4">
                     {member.bio}
                   </p>
-                  <div className="flex flex-wrap justify-center gap-1">
-                    {member.specialties.map((specialty, idx) => (
-                      <span
-                        key={idx}
-                        className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-md text-xs"
-                      >
-                        {specialty}
-                      </span>
-                    ))}
-                  </div>
                 </Card>
               </motion.div>
             ))}

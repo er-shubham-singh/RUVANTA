@@ -87,20 +87,6 @@ export default function OurTeam() {
                       <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
                         {member.bio}
                       </p>
-
-                      {/* Specialties */}
-                      <div className="mb-4">
-                        <div className="flex flex-wrap gap-1.5">
-                          {member.specialties.map(spec => (
-                            <span
-                              key={spec}
-                              className="px-2 py-0.5 bg-indigo-50/60 dark:bg-indigo-950/20 text-indigo-700 dark:text-indigo-400 text-xxs font-medium rounded-full"
-                            >
-                              {spec}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
                     </div>
                   </div>
 

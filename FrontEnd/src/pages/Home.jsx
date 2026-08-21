@@ -131,25 +131,25 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-indigo-50 to-teal-50 dark:from-gray-900 dark:to-gray-800">
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/10 to-teal-600/10"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-16">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-10 sm:pt-20 sm:pb-16">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+              <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
                 Build the Future of Your
                 <span className="bg-gradient-to-r from-indigo-600 to-teal-600 bg-clip-text text-transparent">
                   {" "}Digital Presence
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+              <p className="text-base sm:text-xl text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
                 We craft exceptional web applications, mobile experiences, and digital solutions that drive growth and delight users.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 mb-12">
+              <div className="flex flex-col sm:flex-row gap-4 mb-6 sm:mb-12">
                 <Button onClick={() => navigate("/contact")} size="lg" as={Link} to="/contact">
-                  Get a Quote
+                  Get Started
                   <ArrowRightIcon className="ml-2 h-5 w-5" />
                 </Button>
                 <Button onClick={handleNavigate} variant="secondary" size="lg" as={Link} to="/services">
@@ -180,7 +180,7 @@ export default function Home() {
       </section>
 
       {/* Counters Section */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800/30 border-y border-gray-100 dark:border-gray-800">
+      <section className="py-10 sm:py-16 bg-gray-50 dark:bg-gray-800/30 border-y border-gray-100 dark:border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <motion.div
@@ -242,19 +242,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
-      <section className="py-20 bg-white dark:bg-gray-900">
+      <section className="py-12 sm:py-20 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Our Services
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               From concept to launch, we provide comprehensive digital solutions tailored to your business needs.
             </p>
           </motion.div>
@@ -322,7 +321,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12">
             <Button variant="secondary" size="lg" as={Link} to="/services">
               View All Services
             </Button>
@@ -330,19 +329,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Projects */}
-      <section className="py-20 bg-gray-50 dark:bg-gray-800/50">
+      <section className="py-12 sm:py-20 bg-gray-50 dark:bg-gray-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Featured Work
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Discover how we've helped businesses transform their digital presence and achieve remarkable results.
             </p>
           </motion.div>
@@ -390,7 +388,7 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12">
             <Button variant="secondary" size="lg" as={Link} to="/we-worked">
               View All Completed Projects
             </Button>
@@ -398,20 +396,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Courses Section (NEW Preview on Home Page) */}
-      <section className="py-20 bg-white dark:bg-gray-900 border-t border-gray-50 dark:border-gray-800/20">
+      <section className="py-12 sm:py-20 bg-white dark:bg-gray-900 border-t border-gray-50 dark:border-gray-800/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-center mb-16"
+            className="text-center mb-8 sm:mb-16"
           >
             <Badge variant="info" className="mb-2">Education & Training</Badge>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
               Featured Professional Courses
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+            <p className="text-base sm:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Ready to learn MERN Full Stack, Python, UI/UX, or WordPress? We teach practical, project-based courses at highly affordable Indian prices.
             </p>
           </motion.div>
@@ -471,8 +468,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-indigo-600 to-teal-600">
+      <section className="py-12 sm:py-20 bg-gradient-to-r from-indigo-600 to-teal-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -482,7 +478,7 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
               Ready to Transform Your Digital Presence?
             </h2>
-            <p className="text-xl text-indigo-100 mb-8">
+            <p className="text-base sm:text-xl text-indigo-100 mb-6 sm:mb-8">
               Let's discuss your project and create something extraordinary together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

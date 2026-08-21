@@ -7,3 +7,26 @@
     @apply bg-white dark:bg-[#090D1A] transition-colors duration-300;
   }
 }
+
+/* Global mobile padding adjustments for standard Tailwind py-20 and mb-16 sections */
+@layer utilities {
+  .py-20 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .mb-16 {
+    margin-bottom: 2rem !important;
+  }
+}
+
+@media (min-width: 640px) {
+  @layer utilities {
+    .py-20 {
+      padding-top: 5rem !important;
+      padding-bottom: 5rem !important;
+    }
+    .mb-16 {
+      margin-bottom: 4rem !important;
+    }
+  }
+}
