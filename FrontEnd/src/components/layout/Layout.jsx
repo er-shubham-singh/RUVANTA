@@ -9,7 +9,7 @@ export default function Layout({
   description = ''
 }) {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors">
+    <div className="min-h-screen bg-white dark:bg-[#090D1A] transition-colors">
       <Helmet>
         <title>{title}</title>
         <meta name="description" content={description} />

@@ -7,6 +7,53 @@ import Button from '../components/ui/Button';
 import { CheckIcon, CalendarIcon, ClockIcon, BookOpenIcon, ChevronDownIcon, ChevronUpIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 
+const courseCapsules = {
+  'mern-stack': (
+    <div className="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-3 py-1.5 shadow border border-gray-100 dark:border-gray-700">
+      <div className="w-8 h-8 rounded-full bg-blue-50 dark:bg-blue-950/30 flex items-center justify-center text-lg font-bold text-blue-500 border border-blue-100 dark:border-blue-900/50">
+        ⚛️
+      </div>
+      <span className="text-gray-400 font-bold text-xxs">→</span>
+      <div className="w-8 h-8 rounded-full bg-green-50 dark:bg-green-950/30 flex items-center justify-center text-lg font-bold text-green-500 border border-green-100 dark:border-green-900/50">
+        🟢
+      </div>
+    </div>
+  ),
+  'python-developer': (
+    <div className="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-3 py-1.5 shadow border border-gray-100 dark:border-gray-700">
+      <div className="w-8 h-8 rounded-full bg-yellow-50 dark:bg-yellow-950/30 flex items-center justify-center text-lg font-bold border border-yellow-100 dark:border-yellow-900/50">
+        🐍
+      </div>
+      <span className="text-gray-400 font-bold text-xxs">→</span>
+      <div className="w-8 h-8 rounded-full bg-indigo-50 dark:bg-indigo-950/30 flex items-center justify-center text-[8px] font-extrabold text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900/50">
+        API
+      </div>
+    </div>
+  ),
+  'ui-ux-design': (
+    <div className="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-3 py-1.5 shadow border border-gray-100 dark:border-gray-700">
+      <div className="w-8 h-8 rounded-full bg-orange-50 dark:bg-orange-950/30 flex items-center justify-center text-lg font-bold text-orange-500 border border-orange-100 dark:border-orange-900/50">
+        🎨
+      </div>
+      <span className="text-gray-400 font-bold text-xxs">→</span>
+      <div className="w-8 h-8 rounded-full bg-pink-50 dark:bg-pink-950/30 flex items-center justify-center text-lg font-bold text-pink-500 border border-pink-100 dark:border-pink-900/50">
+        📱
+      </div>
+    </div>
+  ),
+  'wordpress-developer': (
+    <div className="flex items-center gap-2 bg-white dark:bg-gray-800 rounded-full px-3 py-1.5 shadow border border-gray-100 dark:border-gray-700">
+      <div className="w-8 h-8 rounded-full bg-blue-50 dark:bg-blue-950/30 flex items-center justify-center text-lg font-bold text-blue-600 border border-blue-100 dark:border-blue-900/50">
+        W
+      </div>
+      <span className="text-gray-400 font-bold text-xxs">→</span>
+      <div className="w-8 h-8 rounded-full bg-teal-50 dark:bg-teal-950/30 flex items-center justify-center text-lg font-bold text-teal-500 border border-teal-100 dark:border-teal-900/50">
+        🛒
+      </div>
+    </div>
+  )
+};
+
 export default function Courses() {
   const [activeAccordion, setActiveAccordion] = useState({});
 
@@ -43,7 +90,7 @@ export default function Courses() {
       {/* Courses List */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {courses.map((course, courseIdx) => (
               <motion.div
                 key={course.id}
@@ -51,127 +98,61 @@ export default function Courses() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: courseIdx * 0.1 }}
-                className="bg-gray-50 dark:bg-gray-800/40 rounded-2xl p-6 md:p-10 border border-gray-100 dark:border-gray-800 shadow-sm"
               >
-                <div className="grid lg:grid-cols-12 gap-8 items-start">
-                  {/* Left Column: Details & Tech */}
-                  <div className="lg:col-span-7">
-                    <div className="flex items-center gap-3 mb-4">
-                      <span className="text-4xl">{course.icon}</span>
-                      <div>
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">
-                          {course.title}
-                        </h2>
-                        <div className="flex items-center gap-2 mt-1">
-                          <ClockIcon className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
-                          <span className="text-sm font-medium text-gray-600 dark:text-gray-400">
-                            Duration: {course.duration}
-                          </span>
+                <div className="bg-white dark:bg-[#090D1A] rounded-3xl border border-gray-100 dark:border-gray-800 shadow-sm overflow-hidden flex flex-col justify-between h-full p-6 hover:shadow-lg transition-all duration-300">
+                  {/* Top Area: Gradient Bubble Mockup */}
+                  <div className="bg-gradient-to-br from-indigo-50/50 to-teal-50/50 dark:from-gray-900 dark:to-gray-800/80 w-full h-40 flex items-center justify-center rounded-2xl relative p-4 border border-gray-50 dark:border-gray-800">
+                    <div className="transition-transform duration-500 hover:scale-105">
+                      {courseCapsules[course.id]}
+                    </div>
+                  </div>
+
+                  {/* Content Area */}
+                  <div className="pt-6 flex-grow flex flex-col justify-between">
+                    <div>
+                      <span className="px-2.5 py-0.5 bg-indigo-50/60 text-indigo-600 dark:bg-indigo-950/40 dark:text-indigo-400 text-[10px] font-semibold rounded-full w-max">
+                        {course.duration}
+                      </span>
+                      
+                      <h3 className="text-xl font-extrabold text-gray-900 dark:text-white mt-3 mb-2 leading-snug">
+                        {course.title}
+                      </h3>
+                      
+                      <p className="text-gray-500 dark:text-gray-400 text-xs leading-relaxed mb-4 line-clamp-3">
+                        {course.shortDescription}
+                      </p>
+
+                      <div className="mb-6 pt-4 border-t border-gray-100 dark:border-gray-800/60">
+                        <h4 className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 mb-2">
+                          Technologies Covered:
+                        </h4>
+                        <div className="flex flex-wrap gap-1.5">
+                          {course.technologies.slice(0, 4).map(tech => (
+                            <span
+                              key={tech}
+                              className="px-2 py-0.5 bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 text-[10px] font-medium text-gray-600 dark:text-gray-400 rounded"
+                            >
+                              {tech}
+                            </span>
+                          ))}
                         </div>
                       </div>
                     </div>
 
-                    <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
-                      {course.description}
-                    </p>
-
-                    {/* Technologies Covered */}
-                    <div className="mb-6">
-                      <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-2">
-                        Technologies You'll Master:
-                      </h4>
-                      <div className="flex flex-wrap gap-2">
-                        {course.technologies.map(tech => (
-                          <span
-                            key={tech}
-                            className="px-3 py-1 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-full text-xs font-medium text-gray-700 dark:text-gray-300 shadow-sm"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Syllabus Accordion */}
                     <div>
-                      <h4 className="text-xs font-semibold uppercase tracking-wider text-gray-500 mb-3 flex items-center gap-1">
-                        <BookOpenIcon className="h-4 w-4 text-indigo-600" />
-                        Course Syllabus & Roadmap:
-                      </h4>
-                      <div className="space-y-2 border-l-2 border-indigo-100 dark:border-indigo-950 pl-4 ml-2">
-                        {course.syllabus.map((item, idx) => {
-                          const key = `${course.id}-${idx}`;
-                          const isOpen = !!activeAccordion[key];
-                          return (
-                            <div key={idx} className="border-b border-gray-100 dark:border-gray-800/80 pb-2">
-                              <button
-                                onClick={() => toggleAccordion(course.id, idx)}
-                                className="flex items-center justify-between w-full text-left py-2 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors"
-                              >
-                                <span className="text-sm font-semibold text-gray-800 dark:text-gray-200">
-                                  {item.week}: {item.topic}
-                                </span>
-                                {isOpen ? (
-                                  <ChevronUpIcon className="h-4 w-4 text-gray-400" />
-                                ) : (
-                                  <ChevronDownIcon className="h-4 w-4 text-gray-400" />
-                                )}
-                              </button>
-                              {isOpen && (
-                                <p className="text-xs text-gray-600 dark:text-gray-400 mt-1 pl-1 leading-relaxed">
-                                  {item.details}
-                                </p>
-                              )}
-                            </div>
-                          );
-                        })}
+                      <div className="flex items-center justify-between mb-4 pt-3 border-t border-gray-100 dark:border-gray-800/50">
+                        <span className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/20 px-2 py-0.5 rounded uppercase tracking-wider">
+                          Negotiable on Call
+                        </span>
                       </div>
+                      
+                      <Link
+                        to={`/courses/${course.slug}`}
+                        className="w-full text-center block text-xs font-semibold py-2.5 px-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg shadow-sm transition-all"
+                      >
+                        View Syllabus & Details
+                      </Link>
                     </div>
-                  </div>
-
-                  {/* Right Column: Pricing & CTA */}
-                  <div className="lg:col-span-5 bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 p-6 md:p-8 rounded-xl shadow-md flex flex-col justify-between h-full">
-                    <div>
-                      <div className="flex items-center gap-2 mb-4">
-                        <Badge variant="info">{course.discount}</Badge>
-                        <span className="text-xs text-green-600 dark:text-green-400 font-semibold tracking-wider uppercase">
-                          Special Launch Price
-                        </span>
-                      </div>
-
-                      <div className="mb-4">
-                        <span className="text-gray-400 line-through text-lg mr-2">
-                          {course.originalPrice}
-                        </span>
-                        <span className="text-4xl font-extrabold text-indigo-600 dark:text-indigo-400">
-                          {course.price}
-                        </span>
-                        <span className="text-sm text-gray-500 ml-1">/ full course</span>
-                      </div>
-
-                      <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">
-                        No monthly subscriptions. Pay once and get lifetime access to all learning portals, video archives, and updates.
-                      </p>
-
-                      <ul className="space-y-3 mb-8">
-                        {course.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start text-sm">
-                            <CheckIcon className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                            <span className="text-gray-700 dark:text-gray-300">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    <Button
-                      as={Link}
-                      to="/contact"
-                      variant="primary"
-                      size="lg"
-                      className="w-full text-center justify-center"
-                    >
-                      Enrol / Request Demo
-                    </Button>
                   </div>
                 </div>
               </motion.div>

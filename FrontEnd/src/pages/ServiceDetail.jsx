@@ -55,10 +55,10 @@ export default function ServiceDetail() {
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
                   {service.title}
                 </h1>
-                <div className="flex items-center gap-4 mt-3">
+                 <div className="flex items-center gap-4 mt-3">
                   <Badge variant="info">{service.timeline}</Badge>
-                  <span className="text-lg text-gray-600 dark:text-gray-300">
-                    {service.priceRange}
+                  <span className="text-lg text-gray-600 dark:text-gray-300 font-semibold">
+                    Negotiable on Call
                   </span>
                 </div>
               </div>
@@ -183,7 +183,7 @@ export default function ServiceDetail() {
                     Typical project duration: <strong>{service.timeline}</strong>
                   </span>
                   <span className="text-gray-600 dark:text-gray-300">
-                    Starting from <strong>{service.priceRange}</strong>
+                    Pricing: <strong>Negotiable on Call</strong>
                   </span>
                 </div>
               </div>

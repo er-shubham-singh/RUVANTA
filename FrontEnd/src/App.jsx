@@ -11,6 +11,7 @@ import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
 import WeWorked from './pages/WeWorked';
 import Courses from './pages/Courses';
+import CourseDetail from './pages/CourseDetail';
 import OurTeam from './pages/OurTeam';
 import CaseStudy from './pages/CaseStudy';
 import Pricing from './pages/Pricing';
@@ -39,6 +40,7 @@ function App() {
               <Route path="/services/:slug" element={<ServiceDetail />} />
               <Route path="/we-worked" element={<WeWorked />} />
               <Route path="/courses" element={<Courses />} />
+              <Route path="/courses/:slug" element={<CourseDetail />} />
               <Route path="/our-team" element={<OurTeam />} />
               <Route path="/case-study/:slug" element={<CaseStudy />} />
               <Route path="/pricing" element={<Pricing />} />

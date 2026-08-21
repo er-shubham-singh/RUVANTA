@@ -9,7 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { useTheme } from '../../context/ThemeContext';
 import Button from '../ui/Button';
-import RUVANTA from '../../../public/assets/RUVANTA.jpg'
+import RUVANTA from '../../../public/assets/RUVANTA.png'
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -31,41 +31,39 @@ export default function Header() {
   return (
     <Disclosure
       as="nav"
-      className="bg-white dark:bg-gray-900 shadow-sm sticky top-0 z-40"
+      className="sticky top-4 z-50 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto w-full mt-4 mb-4"
     >
       {({ open, close }) => (
         <>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-16">
+          <div className="bg-white/80 dark:bg-slate-900/90 backdrop-blur-md border border-gray-200/80 dark:border-slate-800 rounded-full px-6 shadow-md dark:shadow-xl w-full transition-all duration-300">
+            <div className="flex justify-between items-center h-14">
               {/* Logo */}
               <div className="flex items-center">
                 <Link to="/" className="flex items-center space-x-3">
-                  {/* circular image from public assets - change src if your path differs */}
                   <img
-                    src="/assets/RUVANTA.jpg"
+                    src="/assets/RUVANTA.png"
                     alt="RUVANTA logo"
-                    className="h-10 w-10 rounded-full object-cover border border-gray-200 dark:border-gray-700"
+                    className="h-9 w-9 rounded-full object-cover border border-gray-200 dark:border-slate-700"
                     onError={(e) => {
-                      // fallback: hide image if not found
                       e.currentTarget.style.display = 'none';
                     }}
                   />
-                  <span className="text-lg md:text-xl font-semibold text-gray-900 dark:text-white">
+                  <span className="text-base font-extrabold text-gray-900 dark:text-white tracking-wider uppercase transition-colors">
                     RUVANTA
                   </span>
                 </Link>
               </div>
 
               {/* Desktop Navigation */}
-              <div className="hidden lg:flex lg:items-center lg:space-x-4">
+              <div className="hidden lg:flex lg:items-center lg:space-x-1.5">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`px-2 py-2 text-sm font-medium rounded-md transition-colors ${
+                    className={`px-3 py-1.5 text-xs font-semibold rounded-full transition-all ${
                       location.pathname === item.href
-                        ? 'text-indigo-600 dark:text-indigo-400 bg-indigo-50/40 dark:bg-indigo-900/20'
-                        : 'text-gray-700 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-400'
+                        ? 'text-indigo-600 dark:text-white bg-indigo-50 dark:bg-gray-800'
+                        : 'text-gray-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-slate-800/40'
                     }`}
                   >
                     {item.name}
@@ -78,41 +76,35 @@ export default function Header() {
                 <button
                   onClick={toggleTheme}
                   aria-label="Toggle theme"
-                  className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+                  className="p-2 text-gray-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-white transition-colors"
                 >
                   {isDark ? (
-                    <SunIcon className="h-5 w-5" />
+                    <SunIcon className="h-4 w-4" />
                   ) : (
-                    <MoonIcon className="h-5 w-5" />
+                    <MoonIcon className="h-4 w-4" />
                   )}
                 </button>
 
-                {/* Buttons as Links - use 'as' prop if Button supports it; otherwise wrap in Link */}
-                <Button onClick={()=>navigate("/contact")}
-                  as={Link}
+                <Link
                   to="/contact"
-                  variant="secondary"
-                  size="sm"
+                  className="px-3 py-1.5 text-xs font-semibold text-gray-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-slate-800/40 rounded-full transition-all"
                 >
                   Contact
-                </Button>
-
-                <Button
-                  as={Link}
-                  to="/contact"
-                  variant="primary"
-                  size="sm"
+                </Link>
+                <button
+                  onClick={() => navigate('/contact')}
+                  className="inline-flex items-center justify-center font-bold rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition-all duration-200 px-5 py-2 text-xs border-none"
                 >
-                  Get a Quote
-                </Button>
+                  Get Started →
+                </button>
               </div>
 
               {/* Mobile Actions */}
-              <div className="lg:hidden flex items-center space-x-2">
+              <div className="lg:hidden flex items-center space-x-1">
                 <button
                   onClick={toggleTheme}
                   aria-label="Toggle theme"
-                  className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
+                  className="p-2 text-gray-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-white"
                 >
                   {isDark ? (
                     <SunIcon className="h-5 w-5" />
@@ -120,7 +112,7 @@ export default function Header() {
                     <MoonIcon className="h-5 w-5" />
                   )}
                 </button>
-                <Disclosure.Button className="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300">
+                <Disclosure.Button className="p-2 text-gray-500 dark:text-slate-400 hover:text-indigo-600 dark:hover:text-white">
                   {open ? (
                     <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
@@ -166,28 +158,15 @@ export default function Header() {
 
               {/* Mobile CTA Buttons */}
               <div className="pt-4 space-y-2">
-                <Button
-                  variant="secondary"
-                  size="md"
+                <button
                   onClick={() => {
                     close();
                     navigate('/contact');
                   }}
-                  className="w-full justify-center"
+                  className="w-full flex items-center justify-center font-semibold rounded-full bg-blue-600 hover:bg-blue-700 text-white shadow-sm transition-all duration-200 py-2.5 text-sm"
                 >
-                  Contact
-                </Button>
-                <Button
-                  variant="primary"
-                  size="md"
-                  onClick={() => {
-                    close();
-                    navigate('/contact');
-                  }}
-                  className="w-full justify-center"
-                >
-                  Get a Quote
-                </Button>
+                  Get Started
+                </button>
               </div>
             </div>
           </Disclosure.Panel>

@@ -121,7 +121,7 @@ export default function Footer() {
         className="flex items-center gap-2 text-2xl font-bold bg-gradient-to-r from-indigo-400 to-teal-400 bg-clip-text text-transparent"
       >
         
-          <img className='w-9 rounded-full' src='/assets/RUVANTA.jpg' />
+          <img className='w-9 rounded-full' src='/assets/RUVANTA.png' />
           <p>Ruvanta Services</p>
         
       </Link>

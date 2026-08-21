@@ -9,7 +9,7 @@ import Badge from '../components/ui/Badge';
 const pricingPlans = [
   {
     name: 'Starter Plan',
-    price: '₹4,999 - ₹9,999',
+    price: 'Negotiable on Call',
     description: 'Perfect for small businesses, local shops, and startups looking to establish their initial digital presence.',
     features: [
       'Custom landing page or multipage website',
@@ -25,7 +25,7 @@ const pricingPlans = [
   },
   {
     name: 'Growth Plan',
-    price: '₹14,999 - ₹29,999',
+    price: 'Negotiable on Call',
     description: 'Ideal for growing businesses that need custom web applications, online stores, or custom dashboards.',
     features: [
       'Custom web application or E-commerce store',
@@ -42,7 +42,7 @@ const pricingPlans = [
   },
   {
     name: 'Enterprise Plan',
-    price: 'Custom Quote',
+    price: 'Negotiable on Call',
     description: 'Comprehensive software solutions for organizations with custom workflow and scalability requirements.',
     features: [
       'Multi-platform systems (Web + Mobile App)',
@@ -62,22 +62,22 @@ const pricingPlans = [
 const addOns = [
   {
     name: 'Mobile App Development',
-    price: '+₹19,999 - ₹39,999',
+    price: 'Negotiable on Call',
     description: 'Hybrid Android and iOS applications built with React Native'
   },
   {
     name: 'Advanced SEO & Analytics',
-    price: '+₹4,999/month',
+    price: 'Negotiable on Call',
     description: 'Ongoing keyword tracking, search optimization, and marketing reports'
   },
   {
     name: 'Social Media Management',
-    price: '+₹3,999/month',
+    price: 'Negotiable on Call',
     description: 'Creative post designing, caption writing, and profile handling'
   },
   {
     name: 'Paid Ad Campaign Setup',
-    price: '+₹5,999/campaign',
+    price: 'Negotiable on Call',
     description: 'Meta Ads/Google Ads configuration and A/B campaign optimization'
   }
 ];
