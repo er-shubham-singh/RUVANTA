@@ -5,7 +5,7 @@ import { ArrowLeftIcon, CalendarIcon, UserIcon, ShareIcon } from '@heroicons/rea
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
-import { blogPosts } from '../data/blog';
+import { blogPosts } from '../Data/blog';
 
 export default function BlogPost() {
   const { slug } = useParams();

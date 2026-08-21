@@ -9,13 +9,14 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import ServiceDetail from './pages/ServiceDetail';
-import Portfolio from './pages/Portfolio';
+import WeWorked from './pages/WeWorked';
+import Courses from './pages/Courses';
+import OurTeam from './pages/OurTeam';
 import CaseStudy from './pages/CaseStudy';
 import Pricing from './pages/Pricing';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
-import Careers from './pages/Careers';
 import FAQ from './pages/FAQ';
 import Layout from './components/layout/Layout';
 
@@ -36,13 +37,14 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
               <Route path="/services/:slug" element={<ServiceDetail />} />
-              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/we-worked" element={<WeWorked />} />
+              <Route path="/courses" element={<Courses />} />
+              <Route path="/our-team" element={<OurTeam />} />
               <Route path="/case-study/:slug" element={<CaseStudy />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/careers" element={<Careers />} />
               <Route path="/faq" element={<FAQ />} />
             </Routes>
           </Layout>

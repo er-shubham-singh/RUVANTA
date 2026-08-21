@@ -8,82 +8,77 @@ import Badge from '../components/ui/Badge';
 
 const pricingPlans = [
   {
-    name: 'Starter',
-    price: '$5,000 - $15,000',
-    description: 'Perfect for small businesses and startups looking to establish their digital presence.',
+    name: 'Starter Plan',
+    price: '₹4,999 - ₹9,999',
+    description: 'Perfect for small businesses, local shops, and startups looking to establish their initial digital presence.',
     features: [
-      'Custom website or landing page',
+      'Custom landing page or multipage website',
       'Mobile-responsive design',
-      'Basic SEO optimization',
-      'Contact forms and analytics',
-      '1 month of support',
-      'Source code ownership'
+      'Basic SEO & search engine listing',
+      'Contact forms & WhatsApp integration',
+      '1 month of maintenance support',
+      'Complete source code ownership'
     ],
     recommended: false,
     buttonText: 'Get Started',
-    timeline: '2-4 weeks'
+    timeline: '1-2 weeks'
   },
   {
-    name: 'Growth',
-    price: '$15,000 - $50,000',
-    description: 'Ideal for growing businesses that need comprehensive digital solutions.',
+    name: 'Growth Plan',
+    price: '₹14,999 - ₹29,999',
+    description: 'Ideal for growing businesses that need custom web applications, online stores, or custom dashboards.',
     features: [
-      'Full web application or e-commerce store',
-      'Custom UI/UX design',
-      'Database integration',
-      'Payment processing',
-      'Admin dashboard',
-      'API integrations',
-      '3 months of support',
-      'Performance optimization',
-      'Security implementation'
+      'Custom web application or E-commerce store',
+      'Interactive UI/UX layouts in Figma',
+      'Database integration & secure APIs',
+      'Payment gateway setup (Razorpay/Stripe)',
+      'Admin dashboard to manage content',
+      '3 months of maintenance support',
+      'Speed and security optimization'
     ],
     recommended: true,
     buttonText: 'Most Popular',
-    timeline: '6-12 weeks'
+    timeline: '3-6 weeks'
   },
   {
-    name: 'Enterprise',
+    name: 'Enterprise Plan',
     price: 'Custom Quote',
-    description: 'Comprehensive solutions for large organizations with complex requirements.',
+    description: 'Comprehensive software solutions for organizations with custom workflow and scalability requirements.',
     features: [
-      'Multi-platform applications',
-      'Advanced integrations',
-      'Custom workflows and automations',
-      'Dedicated project manager',
-      'Priority support',
-      'Training and documentation',
-      '6+ months of support',
-      'Scalable architecture',
-      'Compliance and security',
-      'Performance monitoring'
+      'Multi-platform systems (Web + Mobile App)',
+      'Advanced API and database integrations',
+      'Custom management dashboards & tools',
+      'Dedicated project developer & support',
+      '6+ months of maintenance support',
+      'Cloud setup (AWS/GCP/Vercel) & CI/CD',
+      'Continuous performance monitoring'
     ],
     recommended: false,
     buttonText: 'Contact Sales',
-    timeline: '3-6 months'
+    timeline: '6+ weeks'
   }
 ];
 
 const addOns = [
   {
     name: 'Mobile App Development',
-    price: '+$8,000 - $25,000',
-    description: 'Native iOS and Android applications'
+    price: '+₹19,999 - ₹39,999',
+    description: 'Hybrid Android and iOS applications built with React Native'
   },
   {
-    name: 'Advanced Analytics',
-    price: '+$2,000 - $5,000',
-    description: 'Custom dashboards and reporting'
+    name: 'Advanced SEO & Analytics',
+    price: '+₹4,999/month',
+    description: 'Ongoing keyword tracking, search optimization, and marketing reports'
   },
   {
-    name: 'Third-party Integrations',
-    price: '+$1,000 - $5,000',
-    description: 'CRM, marketing tools, and APIs'
+    name: 'Social Media Management',
+    price: '+₹3,999/month',
+    description: 'Creative post designing, caption writing, and profile handling'
   },
   {
-    name: 'Ongoing Maintenance',
-    price: '$500 - $2,000/month',
-    description: 'Updates, monitoring, and support'
+    name: 'Paid Ad Campaign Setup',
+    price: '+₹5,999/campaign',
+    description: 'Meta Ads/Google Ads configuration and A/B campaign optimization'
   }
 ];
 
@@ -296,7 +291,7 @@ export default function Pricing() {
               <Button variant="secondary" size="lg" as={Link} to="/contact">
                 Get Custom Quote
               </Button>
-              <Button variant="ghost" size="lg" as={Link} to="/portfolio" className="text-white border-white hover:bg-white hover:text-indigo-600">
+              <Button variant="ghost" size="lg" as={Link} to="/we-worked" className="text-white border-white hover:bg-white hover:text-indigo-600">
                 View Our Work
               </Button>
             </div>

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
-import { teamMembers, cultureHighlights } from '../data/team';
+import { teamMembers, cultureHighlights } from '../Data/team';
 
 export default function About() {
   return (
@@ -167,8 +167,8 @@ export default function About() {
               We're always looking for talented individuals who share our passion for exceptional digital experiences.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="secondary" size="lg" as={Link} to="/careers">
-                View Open Positions
+              <Button variant="secondary" size="lg" as={Link} to="/courses">
+                Explore Our Courses
               </Button>
               <Button variant="ghost" size="lg" as={Link} to="/contact" className="text-white border-white hover:bg-white hover:text-indigo-600">
                 Get In Touch

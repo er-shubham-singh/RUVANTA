@@ -5,11 +5,10 @@ import { ArrowLeftIcon } from '@heroicons/react/24/outline';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
-import { portfolioProjects } from '../data/portfolio';
+import { projects } from '../data/projects';
 
 export default function CaseStudy() {
-  const { slug } = useParams();
-  const project = portfolioProjects.find(p => p.slug === slug);
+  const project = projects.find(p => p.slug === slug);
 
   if (!project) {
     return (
@@ -18,15 +17,15 @@ export default function CaseStudy() {
           <h1 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
             Case study not found
           </h1>
-          <Button as={Link} to="/portfolio">
-            Back to Portfolio
+          <Button as={Link} to="/we-worked">
+            Back to Completed Projects
           </Button>
         </div>
       </div>
     );
   }
 
-  const relatedProjects = portfolioProjects
+  const relatedProjects = projects
     .filter(p => p.id !== project.id && p.industry === project.industry)
     .slice(0, 2);
 
@@ -41,11 +40,11 @@ export default function CaseStudy() {
             transition={{ duration: 0.8 }}
           >
             <Link
-              to="/portfolio"
+              to="/we-worked"
               className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 mb-6"
             >
               <ArrowLeftIcon className="h-4 w-4 mr-2" />
-              Back to Portfolio
+              Back to Completed Projects
             </Link>
 
             <div className="flex items-center gap-3 mb-6">

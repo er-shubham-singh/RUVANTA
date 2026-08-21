@@ -5,7 +5,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Card from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
 import Button from '../components/ui/Button';
-import { services } from '../data/services';
+import { services } from '../Data/services';
 
 export default function Services() {
   return (
@@ -165,7 +165,7 @@ export default function Services() {
               <Button variant="secondary" size="lg" as={Link} to="/contact">
                 Request Proposal
               </Button>
-              <Button variant="ghost" size="lg" as={Link} to="/portfolio" className="text-white border-white hover:bg-white hover:text-indigo-600">
+              <Button variant="ghost" size="lg" as={Link} to="/we-worked" className="text-white border-white hover:bg-white hover:text-indigo-600">
                 View Our Work
               </Button>
             </div>

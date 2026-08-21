@@ -15,10 +15,11 @@ const navigation = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/services' },
-  { name: 'Portfolio', href: '/portfolio' },
+  { name: 'Courses', href: '/courses' },
+  { name: 'We Worked', href: '/we-worked' },
+  { name: 'Our Team', href: '/our-team' },
   { name: 'Pricing', href: '/pricing' },
   { name: 'Blog', href: '/blog' },
-  { name: 'Careers', href: '/careers' },
   { name: 'FAQ', href: '/faq' }
 ];
 

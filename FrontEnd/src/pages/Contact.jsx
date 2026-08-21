@@ -9,18 +9,17 @@ import Card from '../components/ui/Card';
 import Input from '../components/ui/Input';
 import Select from '../components/ui/Select';
 import Textarea from '../components/ui/Textarea';
-import { services } from '../data/services';
+import { services } from '../Data/services';
 
 // Redux actions (classic)
 import { submitContact, resetContact } from '../Redux/contact/action';
 
 const budgetOptions = [
   { value: '', label: 'Select budget range' },
-  { value: '<10k', label: 'Less than $10,000' },
-  { value: '10k-25k', label: '$10,000 - $25,000' },
-  { value: '25k-50k', label: '$25,000 - $50,000' },
-  { value: '50k-100k', label: '$50,000 - $100,000' },
-  { value: '100k+', label: '$100,000+' }
+  { value: '<10k', label: 'Less than ₹10,000' },
+  { value: '10k-25k', label: '₹10,000 - ₹25,000' },
+  { value: '25k-50k', label: '₹25,000 - ₹50,000' },
+  { value: '50k+', label: '₹50,000+' }
 ];
 
 const serviceOptions = [

@@ -5,8 +5,8 @@ import { ArrowLeftIcon, CheckIcon } from '@heroicons/react/24/outline';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
-import { services } from '../data/services';
-import { portfolioProjects } from '../data/portfolio';
+import { services } from '../Data/services';
+import { projects } from '../Data/projects';
 
 export default function ServiceDetail() {
   const { slug } = useParams();
@@ -27,7 +27,7 @@ export default function ServiceDetail() {
     );
   }
 
-  const relatedProjects = portfolioProjects.filter(
+  const relatedProjects = projects.filter(
     project => project.service === service.title
   ).slice(0, 3);
 
@@ -240,12 +240,14 @@ export default function ServiceDetail() {
                           {project.results[0]?.metric}
                         </div>
                       </div>
-                      <Link
-                        to={`/case-study/${project.slug}`}
+                      <a
+                        href={project.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="block w-full text-center bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 py-2 rounded-lg hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors"
                       >
-                        View Case Study
-                      </Link>
+                        Visit Live Site
+                      </a>
                     </div>
                   </Card>
                 </motion.div>

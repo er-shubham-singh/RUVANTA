@@ -16,9 +16,10 @@ const services = [
 
 const company = [
   { name: 'About Us', href: '/about' },
-  { name: 'Careers', href: '/careers' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'Portfolio', href: '/portfolio' }
+  { name: 'Our Team', href: '/our-team' },
+  { name: 'We Worked', href: '/we-worked' },
+  { name: 'Courses', href: '/courses' },
+  { name: 'Blog', href: '/blog' }
 ];
 
 const resources = [

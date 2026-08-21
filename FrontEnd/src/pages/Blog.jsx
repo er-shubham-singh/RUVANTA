@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { CalendarIcon, UserIcon } from '@heroicons/react/24/outline';
 import Card from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
-import { blogPosts, blogTags } from '../data/blog';
+import { blogPosts, blogTags } from '../Data/blog';
 
 export default function Blog() {
   const [selectedTag, setSelectedTag] = useState('All');

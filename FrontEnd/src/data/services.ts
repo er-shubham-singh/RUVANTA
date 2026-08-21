@@ -1,297 +1,122 @@
-export const services = [
+export interface ServiceProcess {
+  step: string;
+  description: string;
+}
+
+export interface Service {
+  id: string;
+  slug: string;
+  title: string;
+  shortDescription: string;
+  icon: string;
+  timeline: string;
+  deliverables: string[];
+  technologies: string[];
+  priceRange: string;
+  process: ServiceProcess[];
+  problemStatement: string;
+  features: string[];
+}
+
+export const services: Service[] = [
   {
-    id: 'web-development',
-    slug: 'web-development',
-    title: 'Web Development',
-    shortDescription: 'Custom web applications built with modern technologies and scalable architecture.',
+    id: 'web-app-development',
+    slug: 'web-app-development',
+    title: 'Web & App Development',
+    shortDescription: 'Custom, high-performance web applications and mobile apps tailored to your business needs.',
     icon: '🌐',
-    timeline: '4-12 weeks',
-    deliverables: ['Responsive web application', 'Source code', 'Documentation', 'Deployment'],
-    technologies: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Node.js'],
-    priceRange: '$5,000 - $25,000',
+    timeline: '4-8 weeks',
+    deliverables: ['Custom frontend and backend', 'iOS & Android App (if mobile)', 'Admin Dashboard', 'Source Code & Documentation', 'Deployment support'],
+    technologies: ['React.js', 'Node.js', 'Express', 'MongoDB', 'React Native', 'Tailwind CSS', 'Vercel / AWS'],
+    priceRange: 'Starting from ₹19,999',
     process: [
-      {
-        step: 'Discovery',
-        description: 'Understanding your business goals and technical requirements'
-      },
-      {
-        step: 'Design',
-        description: 'Creating wireframes, mockups, and user experience flows'
-      },
-      {
-        step: 'Build',
-        description: 'Developing the application with clean, maintainable code'
-      },
-      {
-        step: 'Launch',
-        description: 'Deployment, testing, and going live'
-      },
-      {
-        step: 'Support',
-        description: 'Ongoing maintenance and feature updates'
-      }
+      { step: 'Requirement Gathering', description: 'Discussing goals, features, target audience, and creating design outlines.' },
+      { step: 'UI/UX Mockups', description: 'Designing interactive Figma mockups for review and approval.' },
+      { step: 'Development', description: 'Writing clean, optimized code for both frontend and backend systems.' },
+      { step: 'Testing & Launch', description: 'Rigorous bug testing, security checks, and final server deployment.' }
     ],
-    problemStatement: 'Many businesses struggle with outdated websites that don\'t convert visitors into customers or scale with their growth.',
+    problemStatement: 'Off-the-shelf software solutions can be rigid, slow, and expensive. Businesses need custom, scalable digital platforms to stand out.',
     features: [
-      'Responsive design for all devices',
-      'SEO optimization',
-      'Performance optimization',
-      'Modern UI/UX',
-      'Content management system',
-      'Analytics integration'
+      'Responsive design for mobile, tablet & desktop',
+      'SEO and speed optimization',
+      'Secure payment gateway integration',
+      'Custom Content Management System (CMS)',
+      'Robust user authentication and database security'
     ]
   },
   {
-    id: 'mobile-development',
-    slug: 'mobile-development',
-    title: 'Mobile App Development',
-    shortDescription: 'Native and cross-platform mobile applications for iOS and Android.',
+    id: 'digital-marketing',
+    slug: 'digital-marketing',
+    title: 'Digital Marketing',
+    shortDescription: 'Grow your business online with strategic Search Engine Optimization (SEO) and lead generation campaigns.',
+    icon: '📈',
+    timeline: 'Monthly retainer',
+    deliverables: ['SEO Audit report', 'Keyword research & mapping', 'On-page & Off-page SEO execution', 'Monthly performance dashboard'],
+    technologies: ['Google Analytics', 'Google Search Console', 'SEMrush / Ahrefs', 'Meta Ads Manager', 'Google Tag Manager'],
+    priceRange: 'Starting from ₹9,999/month',
+    process: [
+      { step: 'SEO Audit & Competitor Review', description: 'Analyzing your current website rankings and identifying competitor strategies.' },
+      { step: 'Strategy & Setup', description: 'Configuring analytics tools, researching keywords, and optimizing tags.' },
+      { step: 'Content & Link Building', description: 'Publishing SEO-optimized content and securing high-quality backlinks.' },
+      { step: 'Reporting & Fine-tuning', description: 'Reviewing analytics and search engine positions to optimize results.' }
+    ],
+    problemStatement: 'Simply having a website is not enough. Without proper marketing and search engine visibility, potential clients cannot find you.',
+    features: [
+      'Targeted keyword optimization',
+      'On-page content optimization & blog writing',
+      'High-quality local citation & link building',
+      'Google My Business (GMB) optimization',
+      'Conversion Rate Optimization (CRO)'
+    ]
+  },
+  {
+    id: 'social-media-handling',
+    slug: 'social-media-handling',
+    title: 'Social Media Handling',
+    shortDescription: 'Manage your brand identity, engage your audience, and build a community across Instagram, LinkedIn, and Facebook.',
     icon: '📱',
-    timeline: '6-16 weeks',
-    deliverables: ['iOS/Android apps', 'App store deployment', 'Backend API', 'Documentation'],
-    technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin', 'Firebase'],
-    priceRange: '$10,000 - $50,000',
+    timeline: 'Monthly retainer',
+    deliverables: ['Social media content calendar', 'Custom post & story designs', 'Copywriting & hashtag strategy', 'Monthly engagement report'],
+    technologies: ['Figma', 'Canva', 'Meta Business Suite', 'Buffer / Hootsuite', 'Adobe Photoshop'],
+    priceRange: 'Starting from ₹5,999/month',
     process: [
-      {
-        step: 'Discovery',
-        description: 'Understanding user needs and platform requirements'
-      },
-      {
-        step: 'Design',
-        description: 'Creating intuitive mobile interfaces and user flows'
-      },
-      {
-        step: 'Build',
-        description: 'Developing native features and functionality'
-      },
-      {
-        step: 'Launch',
-        description: 'App store submission and approval process'
-      },
-      {
-        step: 'Support',
-        description: 'Updates, bug fixes, and feature enhancements'
-      }
+      { step: 'Brand Identity Analysis', description: 'Understanding your brands tone of voice, visual style, and ideal clients.' },
+      { step: 'Content Strategy Planning', description: 'Drafting a monthly theme calendar with educational, promotional, and engaging content.' },
+      { step: 'Design & Review', description: 'Designing eye-catching posts and writing compelling captions for approval.' },
+      { step: 'Publishing & Engagement', description: 'Scheduling posts at peak times, replying to comments, and building engagement.' }
     ],
-    problemStatement: 'Companies need mobile presence to reach customers where they spend most of their time, but lack the expertise to build quality apps.',
+    problemStatement: 'Maintaining an active social media presence takes hours of design, writing, and constant interaction that business owners do not have.',
     features: [
-      'Native performance',
-      'Offline functionality',
-      'Push notifications',
-      'App store optimization',
-      'User authentication',
-      'Analytics and crash reporting'
+      'Platform management (Instagram, LinkedIn, Facebook)',
+      'Custom brand-aligned visual theme',
+      'Creative caption writing & trending hashtags',
+      'Profile optimization and setup',
+      'Audience interaction & comment responses'
     ]
   },
   {
-    id: 'ui-ux-design',
-    slug: 'ui-ux-design',
-    title: 'UI/UX Design',
-    shortDescription: 'User-centered design that converts visitors into loyal customers.',
-    icon: '🎨',
-    timeline: '2-6 weeks',
-    deliverables: ['Design system', 'Wireframes', 'Prototypes', 'Asset library'],
-    technologies: ['Figma', 'Adobe XD', 'Sketch', 'InVision', 'Principle'],
-    priceRange: '$3,000 - $15,000',
+    id: 'ad-run-post-making',
+    slug: 'ad-run-post-making',
+    title: 'Ad Campaigns & Post Making',
+    shortDescription: 'High-converting paid advertisements (Meta, Google Ads) combined with professional graphic design.',
+    icon: '📣',
+    timeline: 'Per campaign',
+    deliverables: ['Custom ad creatives (images/videos)', 'Targeted ad campaign setup', 'A/B testing of ad copies', 'Leads/Sales dashboard reports'],
+    technologies: ['Meta Ads Manager', 'Google Ads', 'Figma', 'Canva', 'Adobe Illustrator'],
+    priceRange: 'Starting from ₹7,999/campaign',
     process: [
-      {
-        step: 'Discovery',
-        description: 'Research user behavior and business objectives'
-      },
-      {
-        step: 'Design',
-        description: 'Create user personas, wireframes, and visual designs'
-      },
-      {
-        step: 'Build',
-        description: 'Develop interactive prototypes and design systems'
-      },
-      {
-        step: 'Launch',
-        description: 'Deliver final assets and design specifications'
-      },
-      {
-        step: 'Support',
-        description: 'Design iterations based on user feedback'
-      }
+      { step: 'Goal Definition', description: 'Defining campaign objectives (e.g. Lead generation, product sales, brand awareness).' },
+      { step: 'Ad Creative Design', description: 'Designing premium visual posts and writing copy optimized for high click-through rates.' },
+      { step: 'Campaign Launch & Targeting', description: 'Setting up precise demographic, behavioral, and custom interest audiences.' },
+      { step: 'Optimization & Scaling', description: 'Monitoring conversion rates, optimizing ad spends, and pausing low-performing ads.' }
     ],
-    problemStatement: 'Poor user experience leads to high bounce rates and lost revenue. Users expect intuitive, beautiful interfaces.',
+    problemStatement: 'Running ads without targeting or bad graphics leads to wasted budget. High-performing ads require professional visuals and strategies.',
     features: [
-      'User research and personas',
-      'Information architecture',
-      'Interactive prototypes',
-      'Design system creation',
-      'Usability testing',
-      'Accessibility compliance'
-    ]
-  },
-  {
-    id: 'ecommerce',
-    slug: 'ecommerce',
-    title: 'E-commerce Solutions',
-    shortDescription: 'Complete online stores with payment processing and inventory management.',
-    icon: '🛒',
-    timeline: '6-14 weeks',
-    deliverables: ['Online store', 'Payment integration', 'Admin dashboard', 'Mobile optimization'],
-    technologies: ['Shopify', 'WooCommerce', 'Stripe', 'PayPal', 'Magento'],
-    priceRange: '$8,000 - $35,000',
-    process: [
-      {
-        step: 'Discovery',
-        description: 'Understanding your products, customers, and sales process'
-      },
-      {
-        step: 'Design',
-        description: 'Creating conversion-optimized store layouts'
-      },
-      {
-        step: 'Build',
-        description: 'Developing secure payment and inventory systems'
-      },
-      {
-        step: 'Launch',
-        description: 'Going live with full testing and optimization'
-      },
-      {
-        step: 'Support',
-        description: 'Ongoing maintenance and conversion optimization'
-      }
-    ],
-    problemStatement: 'Businesses need robust online selling platforms that handle everything from product catalogs to secure payments.',
-    features: [
-      'Product catalog management',
-      'Secure payment processing',
-      'Inventory tracking',
-      'Order management',
-      'Customer accounts',
-      'Analytics and reporting'
-    ]
-  },
-  {
-    id: 'api-integration',
-    slug: 'api-integration',
-    title: 'API Integration',
-    shortDescription: 'Connect your systems with third-party services and custom APIs.',
-    icon: '🔗',
-    timeline: '2-8 weeks',
-    deliverables: ['API endpoints', 'Documentation', 'Testing suite', 'Monitoring'],
-    technologies: ['REST API', 'GraphQL', 'Node.js', 'Python', 'AWS'],
-    priceRange: '$3,000 - $20,000',
-    process: [
-      {
-        step: 'Discovery',
-        description: 'Mapping data flow and integration requirements'
-      },
-      {
-        step: 'Design',
-        description: 'Planning API architecture and endpoints'
-      },
-      {
-        step: 'Build',
-        description: 'Developing secure, scalable integrations'
-      },
-      {
-        step: 'Launch',
-        description: 'Testing and deploying integrations'
-      },
-      {
-        step: 'Support',
-        description: 'Monitoring and maintaining connections'
-      }
-    ],
-    problemStatement: 'Companies use multiple software tools that don\'t communicate, leading to manual work and data inconsistencies.',
-    features: [
-      'Third-party integrations',
-      'Custom API development',
-      'Data synchronization',
-      'Webhook implementation',
-      'Rate limiting and caching',
-      'Error handling and logging'
-    ]
-  },
-  {
-    id: 'cloud-devops',
-    slug: 'cloud-devops',
-    title: 'Cloud & DevOps',
-    shortDescription: 'Scalable infrastructure and automated deployment pipelines.',
-    icon: '☁️',
-    timeline: '3-10 weeks',
-    deliverables: ['Cloud infrastructure', 'CI/CD pipelines', 'Monitoring setup', 'Documentation'],
-    technologies: ['AWS', 'Docker', 'Kubernetes', 'GitHub Actions', 'Terraform'],
-    priceRange: '$5,000 - $25,000',
-    process: [
-      {
-        step: 'Discovery',
-        description: 'Assessing current infrastructure and requirements'
-      },
-      {
-        step: 'Design',
-        description: 'Planning scalable cloud architecture'
-      },
-      {
-        step: 'Build',
-        description: 'Setting up infrastructure and automation'
-      },
-      {
-        step: 'Launch',
-        description: 'Migrating applications and going live'
-      },
-      {
-        step: 'Support',
-        description: 'Monitoring, scaling, and optimization'
-      }
-    ],
-    problemStatement: 'Managing servers, deployments, and scaling manually is time-consuming and error-prone.',
-    features: [
-      'Auto-scaling infrastructure',
-      'Continuous deployment',
-      'Monitoring and alerting',
-      'Backup and disaster recovery',
-      'Security compliance',
-      'Cost optimization'
-    ]
-  },
-  // 🚀 New Agentic AI Service
-  {
-    id: 'agentic-ai',
-    slug: 'agentic-ai',
-    title: 'Agentic AI Development',
-    shortDescription: 'Build autonomous AI agents to automate workflows, decision-making, and customer interactions.',
-    icon: '🤖',
-    timeline: '6-20 weeks',
-    deliverables: ['Custom AI agents', 'Integration with APIs/Databases', 'Workflow automation', 'Documentation'],
-    technologies: ['LangChain', 'OpenAI API', 'Pinecone', 'FastAPI', 'Vector Databases'],
-    priceRange: '$15,000 - $75,000',
-    process: [
-      {
-        step: 'Discovery',
-        description: 'Identify high-impact workflows and decision-making processes for automation'
-      },
-      {
-        step: 'Design',
-        description: 'Architect multi-agent systems with clear roles and integrations'
-      },
-      {
-        step: 'Build',
-        description: 'Develop AI agents with reasoning, memory, and real-time interaction'
-      },
-      {
-        step: 'Launch',
-        description: 'Deploy agents into production and integrate with business tools'
-      },
-      {
-        step: 'Support',
-        description: 'Continuous monitoring, fine-tuning, and scaling of AI agents'
-      }
-    ],
-    problemStatement: 'Enterprises face inefficiencies due to repetitive manual tasks and slow decision-making. Traditional automation lacks adaptability.',
-    features: [
-      'Autonomous AI agents',
-      'Real-time decision-making',
-      'Multi-agent collaboration',
-      'Knowledge base integration',
-      'Natural language interfaces',
-      'Continuous learning and improvement'
+      'Custom graphic designs for advertising posts',
+      'Meta (Instagram/Facebook) and Google Ads execution',
+      'Retargeting campaigns to capture warm leads',
+      'Pixel integration and event tracking setup',
+      'Cost-per-lead optimization'
     ]
   }
 ];
