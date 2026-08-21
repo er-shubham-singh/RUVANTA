@@ -5,9 +5,9 @@ import { ArrowRightIcon, CheckIcon } from '@heroicons/react/24/outline';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
-import { services } from '../Data/services';
-import { projects } from '../Data/projects';
-import { courses } from '../Data/courses';
+import { services } from '../data/services';
+import { projects } from '../data/projects';
+import { courses } from '../data/courses';
 
 const trustLogos = [
   'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg',
@@ -27,8 +27,8 @@ const features = [
 
 export default function Home() {
   let navigate = useNavigate()
-   function handleNavigate (){
-      navigate("/services")
+  function handleNavigate() {
+    navigate("/services")
   }
   const featuredProjects = projects.slice(0, 4);
 
@@ -54,7 +54,7 @@ export default function Home() {
                 We craft exceptional web applications, mobile experiences, and digital solutions that drive growth and delight users.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
-                <Button onClick={()=>navigate("/contact")} size="lg" as={Link} to="/contact">
+                <Button onClick={() => navigate("/contact")} size="lg" as={Link} to="/contact">
                   Get a Quote
                   <ArrowRightIcon className="ml-2 h-5 w-5" />
                 </Button>
@@ -62,7 +62,7 @@ export default function Home() {
                   See Services
                 </Button>
               </div>
-              
+
               {/* Features List */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {features.map((feature, index) => (
@@ -79,7 +79,7 @@ export default function Home() {
                 ))}
               </div>
             </motion.div>
-            
+
 
           </div>
         </div>
@@ -196,8 +196,8 @@ export default function Home() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Card hover className="h-full overflow-hidden border border-gray-100 dark:border-gray-800/80 shadow-md">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover object-top"
                     onError={(e) => {

@@ -51,11 +51,10 @@ export default function Portfolio() {
                   <button
                     key={industry}
                     onClick={() => setSelectedIndustry(industry)}
-                    className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
-                      selectedIndustry === industry
+                    className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${selectedIndustry === industry
                         ? 'bg-indigo-600 text-white'
                         : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                    }`}
+                      }`}
                   >
                     {industry}
                   </button>
@@ -73,11 +72,10 @@ export default function Portfolio() {
                   <button
                     key={service}
                     onClick={() => setSelectedService(service)}
-                    className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${
-                      selectedService === service
+                    className={`px-3 py-1.5 text-sm rounded-lg transition-colors ${selectedService === service
                         ? 'bg-indigo-600 text-white'
                         : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                    }`}
+                      }`}
                   >
                     {service}
                   </button>
@@ -111,8 +109,8 @@ export default function Portfolio() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <Card hover className="h-full overflow-hidden">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover"
                   />
@@ -127,7 +125,7 @@ export default function Portfolio() {
                     <p className="text-gray-600 dark:text-gray-300 mb-4">
                       {project.description}
                     </p>
-                    
+
                     {/* Key Results */}
                     <div className="grid grid-cols-2 gap-4 mb-4">
                       {project.results.slice(0, 2).map((result, idx) => (

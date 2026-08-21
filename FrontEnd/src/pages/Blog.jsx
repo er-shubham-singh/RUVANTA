@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 import { CalendarIcon, UserIcon } from '@heroicons/react/24/outline';
 import Card from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
-import { blogPosts, blogTags } from '../Data/blog';
+import { blogPosts, blogTags } from '../data/blog';
 
 export default function Blog() {
   const [selectedTag, setSelectedTag] = useState('All');
 
-  const filteredPosts = blogPosts.filter(post => 
+  const filteredPosts = blogPosts.filter(post =>
     selectedTag === 'All' || post.tags.includes(selectedTag)
   );
 
@@ -44,11 +44,10 @@ export default function Blog() {
               <button
                 key={tag}
                 onClick={() => setSelectedTag(tag)}
-                className={`px-4 py-2 text-sm rounded-lg transition-colors ${
-                  selectedTag === tag
+                className={`px-4 py-2 text-sm rounded-lg transition-colors ${selectedTag === tag
                     ? 'bg-indigo-600 text-white'
                     : 'bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-600'
-                }`}
+                  }`}
               >
                 {tag}
               </button>
@@ -70,7 +69,7 @@ export default function Blog() {
               <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
                 Featured Articles
               </h2>
-              
+
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {featuredPosts.map((post, index) => (
                   <motion.div
@@ -91,7 +90,7 @@ export default function Blog() {
                             <Badge key={tag} variant="info">{tag}</Badge>
                           ))}
                         </div>
-                        
+
                         <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3 line-clamp-2">
                           <Link
                             to={`/blog/${post.slug}`}
@@ -100,11 +99,11 @@ export default function Blog() {
                             {post.title}
                           </Link>
                         </h3>
-                        
+
                         <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
                           {post.excerpt}
                         </p>
-                        
+
                         <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400">
                           <div className="flex items-center">
                             <img
@@ -140,7 +139,7 @@ export default function Blog() {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
               Latest Articles
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {regularPosts.map((post, index) => (
                 <motion.div
@@ -161,7 +160,7 @@ export default function Blog() {
                           <Badge key={tag} variant="default" size="sm">{tag}</Badge>
                         ))}
                       </div>
-                      
+
                       <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2 line-clamp-2">
                         <Link
                           to={`/blog/${post.slug}`}
@@ -170,11 +169,11 @@ export default function Blog() {
                           {post.title}
                         </Link>
                       </h3>
-                      
+
                       <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3 text-sm">
                         {post.excerpt}
                       </p>
-                      
+
                       <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400">
                         <div className="flex items-center">
                           <UserIcon className="h-3 w-3 mr-1" />

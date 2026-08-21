@@ -275,11 +275,11 @@ export default function Careers() {
                       <Button size="sm">Apply Now</Button>
                     </div>
                   </div>
-                  
+
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     {position.description}
                   </p>
-                  
+
                   <div>
                     <h4 className="text-sm font-medium text-gray-900 dark:text-white mb-2">
                       Key Requirements:

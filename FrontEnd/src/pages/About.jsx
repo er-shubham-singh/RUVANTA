@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
-import { teamMembers, cultureHighlights } from '../Data/team';
+import { teamMembers, cultureHighlights } from '../data/team';
 
 export default function About() {
   return (
@@ -20,7 +20,7 @@ export default function About() {
               We're Ruvanta Technology
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
-              A team of passionate creators, engineers, and strategists dedicated to building exceptional digital experiences that drive real business results.
+              A teams of passionate creators, engineers, and strategists dedicated to building exceptional digital experiences that drive real business results.
             </p>
           </motion.div>
         </div>

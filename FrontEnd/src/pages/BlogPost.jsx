@@ -5,12 +5,12 @@ import { ArrowLeftIcon, CalendarIcon, UserIcon, ShareIcon } from '@heroicons/rea
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
-import { blogPosts } from '../Data/blog';
+import { blogPosts } from '../data/blog';
 
 export default function BlogPost() {
   const { slug } = useParams();
   const post = blogPosts.find(p => p.slug === slug);
-  
+
   if (!post) {
     return (
       <div className="min-h-screen bg-white dark:bg-gray-900 flex items-center justify-center">
@@ -47,17 +47,17 @@ export default function BlogPost() {
               <ArrowLeftIcon className="h-4 w-4 mr-2" />
               Back to Blog
             </Link>
-            
+
             <div className="flex flex-wrap gap-2 mb-6">
               {post.tags.map(tag => (
                 <Badge key={tag} variant="info">{tag}</Badge>
               ))}
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               {post.title}
             </h1>
-            
+
             <div className="flex items-center gap-6 text-gray-600 dark:text-gray-300">
               <div className="flex items-center">
                 <img
@@ -70,16 +70,16 @@ export default function BlogPost() {
                   <div className="text-sm text-gray-500 dark:text-gray-400">Author</div>
                 </div>
               </div>
-              
+
               <div className="flex items-center text-sm">
                 <CalendarIcon className="h-4 w-4 mr-2" />
-                <span>{new Date(post.publishedAt).toLocaleDateString('en-US', { 
-                  year: 'numeric', 
-                  month: 'long', 
-                  day: 'numeric' 
+                <span>{new Date(post.publishedAt).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric'
                 })}</span>
               </div>
-              
+
               <button className="flex items-center text-sm hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
                 <ShareIcon className="h-4 w-4 mr-2" />
                 Share
@@ -158,7 +158,7 @@ export default function BlogPost() {
                           <Badge key={tag} variant="default" size="sm">{tag}</Badge>
                         ))}
                       </div>
-                      
+
                       <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                         <Link
                           to={`/blog/${relatedPost.slug}`}
@@ -167,11 +167,11 @@ export default function BlogPost() {
                           {relatedPost.title}
                         </Link>
                       </h3>
-                      
+
                       <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm line-clamp-3">
                         {relatedPost.excerpt}
                       </p>
-                      
+
                       <div className="flex items-center text-xs text-gray-500 dark:text-gray-400">
                         <UserIcon className="h-3 w-3 mr-1" />
                         <span className="mr-4">{relatedPost.author}</span>

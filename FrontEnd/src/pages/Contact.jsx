@@ -9,7 +9,7 @@ import Card from '../components/ui/Card';
 import Input from '../components/ui/Input';
 import Select from '../components/ui/Select';
 import Textarea from '../components/ui/Textarea';
-import { services } from '../Data/services';
+import { services } from '../data/services';
 
 // Redux actions (classic)
 import { submitContact, resetContact } from '../Redux/contact/action';

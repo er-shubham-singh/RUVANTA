@@ -120,7 +120,7 @@ export default function Pricing() {
                       Most Popular
                     </Badge>
                   )}
-                  
+
                   <div className="text-center mb-8">
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
                       {plan.name}

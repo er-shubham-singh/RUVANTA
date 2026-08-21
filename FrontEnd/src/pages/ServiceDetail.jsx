@@ -5,13 +5,13 @@ import { ArrowLeftIcon, CheckIcon } from '@heroicons/react/24/outline';
 import Button from '../components/ui/Button';
 import Card from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
-import { services } from '../Data/services';
-import { projects } from '../Data/projects';
+import { services } from '../data/services';
+import { projects } from '../data/projects';
 
 export default function ServiceDetail() {
   const { slug } = useParams();
   const service = services.find(s => s.slug === slug);
-  
+
   if (!service) {
     return (
       <div className="min-h-screen bg-white dark:bg-gray-900 flex items-center justify-center">
@@ -48,7 +48,7 @@ export default function ServiceDetail() {
               <ArrowLeftIcon className="h-4 w-4 mr-2" />
               Back to Services
             </Link>
-            
+
             <div className="flex items-center mb-6">
               <span className="text-4xl mr-4">{service.icon}</span>
               <div>
@@ -63,7 +63,7 @@ export default function ServiceDetail() {
                 </div>
               </div>
             </div>
-            
+
             <p className="text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
               {service.shortDescription}
             </p>
@@ -173,7 +173,7 @@ export default function ServiceDetail() {
                   </div>
                 ))}
               </div>
-              
+
               <div className="mt-8 p-6 bg-gradient-to-r from-indigo-50 to-teal-50 dark:from-indigo-900/20 dark:to-teal-900/20 rounded-xl">
                 <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                   Timeline & Investment
@@ -219,8 +219,8 @@ export default function ServiceDetail() {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <Card hover className="h-full overflow-hidden">
-                    <img 
-                      src={project.image} 
+                    <img
+                      src={project.image}
                       alt={project.title}
                       className="w-full h-48 object-cover"
                     />

@@ -7,9 +7,10 @@ import Button from '../components/ui/Button';
 import { ArrowTopRightOnSquareIcon, ShieldCheckIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 
+
 export default function WeWorked() {
   return (
-    <div className="bg-white dark:bg-gray-900 min-h-screen">
+    <div className="bg-white  dark:bg-gray-900 min-h-screen">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-indigo-50 to-teal-50 dark:from-gray-900 dark:to-gray-800 py-20">
         <div className="absolute inset-0 bg-gradient-to-r from-indigo-600/10 to-teal-600/10"></div>

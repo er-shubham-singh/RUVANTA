@@ -5,7 +5,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Card from '../components/ui/Card';
 import Badge from '../components/ui/Badge';
 import Button from '../components/ui/Button';
-import { services } from '../Data/services';
+import { services } from '../data/services';
 
 export default function Services() {
   return (
@@ -47,7 +47,7 @@ export default function Services() {
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     {service.shortDescription}
                   </p>
-                  
+
                   <div className="space-y-3 mb-6">
                     <div>
                       <h4 className="text-sm font-medium text-gray-900 dark:text-white mb-2">
@@ -62,7 +62,7 @@ export default function Services() {
                         ))}
                       </ul>
                     </div>
-                    
+
                     <div>
                       <h4 className="text-sm font-medium text-gray-900 dark:text-white mb-2">
                         Technologies:
