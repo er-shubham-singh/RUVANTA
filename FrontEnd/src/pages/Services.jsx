@@ -131,7 +131,7 @@ export default function Services() {
                           {service.timeline}
                         </span>
                         <span className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/20 px-2 py-0.5 rounded uppercase tracking-wider">
-                          Call us: 7088996686
+                          Call us: +91 93896 44165
                         </span>
                       </div>
                       

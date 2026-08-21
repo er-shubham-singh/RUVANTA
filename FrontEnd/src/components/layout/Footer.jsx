@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  MapPinIcon, 
-  PhoneIcon, 
-  EnvelopeIcon 
+import {
+  MapPinIcon,
+  PhoneIcon,
+  EnvelopeIcon
 } from '@heroicons/react/24/outline';
 
 const services = [
@@ -99,7 +99,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center">
                 <PhoneIcon className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-400">+91 7088996686</span>
+                <span className="text-gray-400">+91 93896 44165</span>
               </div>
               <div className="flex items-center">
                 <EnvelopeIcon className="h-5 w-5 text-gray-400 mr-2" />
@@ -113,41 +113,27 @@ export default function Footer() {
           </div>
         </div>
 
-<div className="mt-8 pt-8 border-t border-gray-800">
-  <div className="flex flex-col md:flex-row justify-between items-center">
-    <div className="flex items-center space-x-4">
-      <Link
-        to="/"
-        className="flex items-center gap-2 text-2xl font-bold bg-gradient-to-r from-indigo-400 to-teal-400 bg-clip-text text-transparent"
-      >
-        
-          <img className='w-9 rounded-full' src='/assets/RUVANTA.png' />
-          <p>Ruvanta Services</p>
-        
-      </Link>
-    </div>
-    <div className="mt-4 md:mt-0 text-center md:text-right">
-      <p className="text-gray-400 text-sm">
-        © 2025 Ruvanta Services. All rights reserved.
-      </p>
-      <p className="text-gray-500 text-xs mt-1">
-        Website developed by{" "}
-        <a
-          href="mailto:shubham.singh7985@gmail.com"
-          className="hover:text-white transition-colors font-medium"
-        >
-          Shubham Singh
-        </a>
-        <h1 className="hover:text-white transition-colors font-medium">
-                  <a
-          href="mailto:shubham.singh7985@gmail.com"
-          className="hover:text-white transition-colors font-medium"
-        >shubham.singh7985@gmail.com</a>
-        </h1>
-      </p>
-    </div>
-  </div>
-</div>
+        <div className="mt-8 pt-8 border-t border-gray-800">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <div className="flex items-center space-x-4">
+              <Link
+                to="/"
+                className="flex items-center gap-2 text-2xl font-bold bg-gradient-to-r from-indigo-400 to-teal-400 bg-clip-text text-transparent"
+              >
+
+                <img className='w-9 rounded-full' src='/assets/RUVANTA.png' />
+                <p>Ruvanta Services</p>
+
+              </Link>
+            </div>
+            <div className="mt-4 md:mt-0 text-center md:text-right">
+              <p className="text-gray-400 text-sm">
+                © 2025 Ruvanta Services. All rights reserved.
+              </p>
+
+            </div>
+          </div>
+        </div>
 
       </div>
     </footer>

@@ -215,7 +215,7 @@ export default function CourseDetail() {
 
               <div className="mb-4">
                 <span className="text-3xl font-extrabold text-indigo-600 dark:text-indigo-400">
-                  Call us: 7088996686
+                  Call us: +91 93896 44165
                 </span>
               </div>
 
@@ -243,7 +243,7 @@ export default function CourseDetail() {
                   Enrol Now & Connect
                 </Link>
                 <a
-                  href={`https://wa.me/917088996686?text=Hi%20Ruvanta,%20I%20am%20interested%20in%20the%20${encodeURIComponent(course.title)}%20course.`}
+                  href={`https://wa.me/919389644165?text=Hi%20Ruvanta,%20I%20am%20interested%20in%20the%20${encodeURIComponent(course.title)}%20course.`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full text-center block text-sm font-semibold py-3 px-4 border border-indigo-600 dark:border-indigo-400 text-indigo-600 dark:text-indigo-400 rounded-xl hover:bg-indigo-50 dark:hover:bg-indigo-950/20 transition-all"

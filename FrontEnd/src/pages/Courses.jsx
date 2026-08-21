@@ -153,7 +153,7 @@ export default function Courses() {
                     <div>
                       <div className="flex items-center justify-between mb-4 pt-3 border-t border-gray-100 dark:border-gray-800/50">
                         <span className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/20 px-2 py-0.5 rounded uppercase tracking-wider">
-                          Call us: 7088996686
+                          Call us: +91 93896 44165
                         </span>
                       </div>
                       
