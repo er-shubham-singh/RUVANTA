@@ -276,15 +276,15 @@ export default function Home() {
                       backgroundSize: '16px 16px'
                     }}
                   >
-                    <div 
-                      className="transition-transform duration-500 group-hover:scale-110"
+                    <img 
+                      src={`/assets/services/${service.id}.png`}
+                      alt={service.title}
+                      className="w-28 h-28 object-contain filter drop-shadow-[0_8px_16px_rgba(59,130,246,0.15)] group-hover:scale-110 transition-transform duration-500"
                       style={{
                         transformStyle: 'preserve-3d',
-                        transform: 'perspective(500px) rotateX(25deg) rotateY(-15deg)'
+                        transform: 'perspective(500px) rotateX(15deg) rotateY(-10deg)'
                       }}
-                    >
-                      {service3DIllustrations[service.id]}
-                    </div>
+                    />
                   </div>
                   
                   {/* Content Area */}
@@ -303,8 +303,8 @@ export default function Home() {
                         <span className="px-2 py-0.5 bg-blue-50 dark:bg-blue-950/40 text-blue-600 dark:text-blue-400 border border-blue-100 dark:border-blue-900/30 text-[10px] font-semibold rounded uppercase tracking-wider">
                           {service.timeline}
                         </span>
-                        <span className="text-[10px] font-bold text-gray-500 dark:text-gray-400 bg-gray-100 dark:bg-gray-800/60 px-2 py-0.5 rounded">
-                          Negotiable on Call
+                        <span className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/20 px-2 py-0.5 rounded uppercase tracking-wider">
+                          Call us: 7088996686
                         </span>
                       </div>
                       
@@ -452,7 +452,7 @@ export default function Home() {
                     <div>
                       <div className="flex items-center justify-between mb-3 pt-3 border-t border-gray-50 dark:border-gray-800/50">
                         <span className="text-[10px] font-bold text-indigo-600 dark:text-indigo-400 bg-indigo-50 dark:bg-indigo-950/20 px-2 py-0.5 rounded uppercase tracking-wider">
-                          Negotiable on Call
+                          Call us: 7088996686
                         </span>
                       </div>
                       

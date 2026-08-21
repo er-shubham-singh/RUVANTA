@@ -261,7 +261,7 @@ export default function FAQ() {
               transition={{ duration: 0.5 }}
             >
               <h3 className="text-lg font-semibold mb-2">Email Us</h3>
-              <p className="text-indigo-100">hello@ruvantatechnology.studio</p>
+              <p className="text-indigo-100">hr@ruvantatechnology.com</p>
               <p className="text-sm text-indigo-200">Response within 24 hours</p>
             </motion.div>
 
@@ -271,7 +271,7 @@ export default function FAQ() {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               <h3 className="text-lg font-semibold mb-2">Call Us</h3>
-              <p className="text-indigo-100">+1 (555) 123-4567</p>
+              <p className="text-indigo-100">+91 7088996686</p>
               <p className="text-sm text-indigo-200">Mon-Fri 9AM-6PM PST</p>
             </motion.div>
 

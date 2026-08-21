@@ -270,7 +270,7 @@ export default function Contact() {
                     <PhoneIcon className="h-6 w-6 text-indigo-600 mr-4 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900 dark:text-white">Phone</h3>
-                      <p className="text-gray-600 dark:text-gray-300">+ (91)  6354 729 042</p>
+                      <p className="text-gray-600 dark:text-gray-300">+91 7088996686</p>
                       <p className="text-sm text-gray-500 dark:text-gray-400">Mon-Fri 9AM-6PM PST</p>
                     </div>
                   </div>
@@ -279,7 +279,7 @@ export default function Contact() {
                     <EnvelopeIcon className="h-6 w-6 text-indigo-600 mr-4 mt-1" />
                     <div>
                       <h3 className="font-semibold text-gray-900 dark:text-white">Email</h3>
-                      <p className="text-gray-600 dark:text-gray-300">sahilp6354@gmail.com</p>
+                      <p className="text-gray-600 dark:text-gray-300">hr@ruvantatechnology.com</p>
                       <p className="text-sm text-gray-500 dark:text-gray-400">We respond within 24 hours</p>
                     </div>
                   </div>

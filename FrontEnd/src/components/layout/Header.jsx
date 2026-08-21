@@ -18,7 +18,6 @@ const navigation = [
   { name: 'Courses', href: '/courses' },
   { name: 'We Worked', href: '/we-worked' },
   { name: 'Our Team', href: '/our-team' },
-  { name: 'Pricing', href: '/pricing' },
   { name: 'Blog', href: '/blog' },
   { name: 'FAQ', href: '/faq' }
 ];
@@ -35,7 +34,14 @@ export default function Header() {
     >
       {({ open, close }) => (
         <>
-          <div className="bg-white/80 dark:bg-slate-900/90 backdrop-blur-md border border-gray-200/80 dark:border-slate-800 rounded-full px-6 shadow-md dark:shadow-xl w-full transition-all duration-300">
+          <div
+            className="border border-gray-200/50 dark:border-slate-800 rounded-full px-6 shadow-md dark:shadow-xl w-full transition-all duration-300"
+            style={{
+              backgroundColor: isDark ? 'rgba(11, 15, 25, 0.5)' : 'rgba(255, 255, 255, 0.25)',
+              backdropFilter: 'blur(20px)',
+              WebkitBackdropFilter: 'blur(20px)'
+            }}
+          >
             <div className="flex justify-between items-center h-14">
               {/* Logo */}
               <div className="flex items-center">
@@ -43,7 +49,7 @@ export default function Header() {
                   <img
                     src="/assets/RUVANTA.png"
                     alt="RUVANTA logo"
-                    className="h-9 w-9 rounded-full object-cover border border-gray-200 dark:border-slate-700"
+                    className="h-9 w-9  object-cover"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                     }}
@@ -55,16 +61,15 @@ export default function Header() {
               </div>
 
               {/* Desktop Navigation */}
-              <div className="hidden lg:flex lg:items-center lg:space-x-1.5">
+              <div className="hidden lg:flex lg:items-center lg:space-x-1">
                 {navigation.map((item) => (
                   <Link
                     key={item.name}
                     to={item.href}
-                    className={`px-3 py-1.5 text-xs font-semibold rounded-full transition-all ${
-                      location.pathname === item.href
-                        ? 'text-indigo-600 dark:text-white bg-indigo-50 dark:bg-gray-800'
-                        : 'text-gray-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-slate-800/40'
-                    }`}
+                    className={`px-3 py-1.5 text-xs font-semibold rounded-full transition-all border border-transparent ${location.pathname === item.href
+                        ? 'text-indigo-600 dark:text-white bg-indigo-50/80 dark:bg-gray-800 border-indigo-100/50 dark:border-slate-700/60'
+                        : 'text-gray-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-white hover:bg-gray-50/50 dark:hover:bg-slate-800/40 hover:border-gray-200/30 dark:hover:border-slate-700/30'
+                      }`}
                   >
                     {item.name}
                   </Link>
@@ -145,11 +150,10 @@ export default function Header() {
                     key={item.name}
                     to={item.href}
                     onClick={close}
-                    className={`block px-3 py-2 text-base font-medium rounded-lg transition-colors ${
-                      location.pathname === item.href
-                        ? 'text-indigo-600 bg-indigo-50 dark:text-indigo-400 dark:bg-indigo-900/20'
-                        : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-indigo-400 dark:hover:bg-gray-800'
-                    }`}
+                    className={`block px-3 py-2 text-base font-medium rounded-lg transition-colors ${location.pathname === item.href
+                      ? 'text-indigo-600 bg-indigo-50 dark:text-indigo-400 dark:bg-indigo-900/20'
+                      : 'text-gray-700 hover:text-indigo-600 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-indigo-400 dark:hover:bg-gray-800'
+                      }`}
                   >
                     {item.name}
                   </Link>

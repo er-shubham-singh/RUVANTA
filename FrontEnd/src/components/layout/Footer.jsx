@@ -99,11 +99,11 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center">
                 <PhoneIcon className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-400">+(91) 6354 729 042</span>
+                <span className="text-gray-400">+91 7088996686</span>
               </div>
               <div className="flex items-center">
                 <EnvelopeIcon className="h-5 w-5 text-gray-400 mr-2" />
-                <span className="text-gray-400">sahilp6354@gmail.com</span>
+                <span className="text-gray-400">hr@ruvantatechnology.com</span>
               </div>
               {/* <div className="flex items-start">
                 <MapPinIcon className="h-5 w-5 text-gray-400 mr-2 mt-0.5" />

@@ -33,7 +33,7 @@ export default function Layout({
             },
             "contactPoint": {
               "@type": "ContactPoint",
-              "telephone": "+1-555-123-4567",
+              "telephone": "+91-7088996686",
               "contactType": "customer service"
             }
           })}

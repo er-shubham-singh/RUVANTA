@@ -14,7 +14,6 @@ import Courses from './pages/Courses';
 import CourseDetail from './pages/CourseDetail';
 import OurTeam from './pages/OurTeam';
 import CaseStudy from './pages/CaseStudy';
-import Pricing from './pages/Pricing';
 import Blog from './pages/Blog';
 import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
@@ -43,7 +42,6 @@ function App() {
               <Route path="/courses/:slug" element={<CourseDetail />} />
               <Route path="/our-team" element={<OurTeam />} />
               <Route path="/case-study/:slug" element={<CaseStudy />} />
-              <Route path="/pricing" element={<Pricing />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="/contact" element={<Contact />} />

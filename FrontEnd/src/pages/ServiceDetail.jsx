@@ -58,7 +58,7 @@ export default function ServiceDetail() {
                  <div className="flex items-center gap-4 mt-3">
                   <Badge variant="info">{service.timeline}</Badge>
                   <span className="text-lg text-gray-600 dark:text-gray-300 font-semibold">
-                    Negotiable on Call
+                    Call us: 7088996686
                   </span>
                 </div>
               </div>
@@ -183,7 +183,7 @@ export default function ServiceDetail() {
                     Typical project duration: <strong>{service.timeline}</strong>
                   </span>
                   <span className="text-gray-600 dark:text-gray-300">
-                    Pricing: <strong>Negotiable on Call</strong>
+                    Pricing: <strong>Call us: 7088996686</strong>
                   </span>
                 </div>
               </div>
