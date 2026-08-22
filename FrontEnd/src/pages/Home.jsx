@@ -390,7 +390,7 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300 font-semibold text-sm"
                     >
-                      Visit Live Website
+                      {project.url.includes('instagram.com') ? 'Visit Instagram' : 'Visit Live Website'}
                       <ArrowRightIcon className="ml-1 h-4 w-4" />
                     </a>
                   </div>

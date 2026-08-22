@@ -16,7 +16,7 @@ export const teamMembers: TeamMember[] = [
     degree: 'B.Tech Computer Science',
     role: 'Full Stack Web Developer',
     bio: 'Highly skilled full-stack developer specializing in modern JavaScript ecosystems, building interactive frontends and secure api backends.',
-    image: '/assets/team/Shagun.jpeg',
+    image: '/assets/team/Shagun.png',
     linkedin: 'https://www.linkedin.com/in/shagun-sharma17',
     instagram: 'https://instagram.com'
   },
@@ -31,12 +31,12 @@ export const teamMembers: TeamMember[] = [
     instagram: 'https://instagram.com'
   },
   {
-    id: 'sryadeepdas',
-    name: 'Sryadeep Das',
+    id: 'suryadeepdas',
+    name: 'Suryadeep Das',
     degree: 'B.Tech & M.Tech Computer Science',
     role: 'Python Developer & Trainee',
     bio: 'Versatile programmer focusing on Python backend development, Django APIs, script automation, and AI integrations.',
-    image: '/assets/team/sryadeep.png',
+    image: '/assets/team/suryadeep.png',
     linkedin: 'https://linkedin.com',
     instagram: 'https://instagram.com'
   },

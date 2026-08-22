@@ -114,7 +114,7 @@ export default function WeWorked() {
                       rel="noopener noreferrer"
                       className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-md border border-indigo-600 dark:border-indigo-400 text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-950/30 transition-colors"
                     >
-                      Visit Live Site
+                      {project.url.includes('instagram.com') ? 'Visit Instagram' : 'Visit Live Site'}
                       <ArrowTopRightOnSquareIcon className="h-4 w-4" />
                     </a>
                   </div>

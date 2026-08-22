@@ -246,7 +246,7 @@ export default function ServiceDetail() {
                         rel="noopener noreferrer"
                         className="block w-full text-center bg-indigo-50 dark:bg-indigo-900/20 text-indigo-600 dark:text-indigo-400 py-2 rounded-lg hover:bg-indigo-100 dark:hover:bg-indigo-900/30 transition-colors"
                       >
-                        Visit Live Site
+                        {project.url.includes('instagram.com') ? 'Visit Instagram' : 'Visit Live Site'}
                       </a>
                     </div>
                   </Card>
