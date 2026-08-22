@@ -16,7 +16,7 @@ export const teamMembers: TeamMember[] = [
     degree: 'B.Tech Computer Science',
     role: 'Full Stack Web Developer',
     bio: 'Highly skilled full-stack developer specializing in modern JavaScript ecosystems, building interactive frontends and secure api backends.',
-    image: '/assets/team/Shagun.png',
+    image: '/assets/team/shagun.png',
     linkedin: 'https://www.linkedin.com/in/shagun-sharma17',
     instagram: 'https://instagram.com'
   },
